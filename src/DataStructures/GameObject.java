@@ -2,7 +2,7 @@
  * Created by mohz2 on 2/6/2017.
  */
 
-package Kinematic;
+package DataStructures;
 
 import processing.core.PVector;
 

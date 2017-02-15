@@ -3,23 +3,24 @@
  */
 
 
-package Kinematic;
+package DataStructures;
 
+import processing.core.PConstants;
 import processing.core.PVector;
 
-public class Character extends GameObject {
+public class Agent extends GameObject {
 
     PVector velocity;
     float rotation;
     long lastTime;
 
-    public Character(){
+    public Agent(){
         lastTime = System.currentTimeMillis();
         this.velocity = new PVector(0,0);
         this.rotation = 0;
     }
 
-    public Character(PVector position, float orientation, PVector velocity, float rotation) {
+    public Agent(PVector position, float orientation, PVector velocity, float rotation) {
         super(position, orientation);
         this.velocity = velocity;
         this.rotation = rotation;
@@ -42,22 +43,38 @@ public class Character extends GameObject {
         this.rotation = rotation;
     }
 
+    public float mapToRange(float goalOrientation)
+    {
+        float r = goalOrientation % PConstants.PI * 2;
+        if (Math.abs(r) <= PConstants.PI) {
+            return r;
+        }
+        else
+        {
+            return (r > PConstants.PI) ? r - 2 * PConstants.PI : r + 2 * PConstants.PI;
+        }
+    }
+
     public void update(long time)
     {
         long deltaTime = (time - lastTime);
 
         setPosition(position.add(PVector.mult(getVelocity(),deltaTime)));
-        setOrientation(orientation + rotation * deltaTime);
+        float goalOrientation = orientation + rotation * deltaTime;
+        goalOrientation = mapToRange(goalOrientation);
+        setOrientation(goalOrientation);
 
         lastTime = time;
     }
 
     public float getNewOrientation()
     {
-        if(this.getVelocity().magSq() > 0)
+        if(this.getVelocity().mag() > .2f)
             return this.getVelocity().heading();
         return this.getOrientation();
     }
+
+
 
 
 
