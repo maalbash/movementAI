@@ -2,18 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="69555fd6-b08e-4ead-9766-10e56c3ece64" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Other/Helper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Steering/Align.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Steering/Smotion.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/First/DataStructures/Agent.class" afterPath="$PROJECT_DIR$/out/production/First/DataStructures/Agent.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/First/Kinematic/BasicMotion.class" afterPath="$PROJECT_DIR$/out/production/First/Kinematic/BasicMotion.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/First/Kinematic/Kmotion.class" afterPath="$PROJECT_DIR$/out/production/First/Kinematic/Kmotion.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/First/Steering/Arrive.class" afterPath="$PROJECT_DIR$/out/production/First/Steering/Arrive.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/DataStructures/Agent.java" afterPath="$PROJECT_DIR$/src/DataStructures/Agent.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Kinematic/BasicMotion.java" afterPath="$PROJECT_DIR$/src/Kinematic/BasicMotion.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Kinematic/Kmotion.java" afterPath="$PROJECT_DIR$/src/Kinematic/Kmotion.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Steering/Arrive.java" afterPath="$PROJECT_DIR$/src/Steering/Arrive.java" />
     </list>
     <ignored path="First.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -38,12 +28,12 @@
       <file leaf-file-name="BasicMotion.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Kinematic/BasicMotion.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="230">
-              <caret line="108" column="88" lean-forward="false" selection-start-line="108" selection-start-column="88" selection-end-line="108" selection-end-column="88" />
+            <state relative-caret-position="17">
+              <caret line="76" column="21" lean-forward="false" selection-start-line="76" selection-start-column="21" selection-end-line="76" selection-end-column="21" />
               <folding>
-                <element signature="e#0#3704#0" expanded="true" />
+                <element signature="e#0#3687#0" expanded="true" />
                 <element signature="imports" expanded="true" />
-                <element signature="method#init#0;class#BasicMotion#0" expanded="false" />
+                <element signature="method#checkOrientationReached#0;class#BasicMotion#0" expanded="false" />
                 <element signature="method#drawCrumbs#0;class#BasicMotion#0" expanded="false" />
               </folding>
             </state>
@@ -64,7 +54,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Smotion.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Smotion.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Steering/Smotion.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="383">
@@ -103,11 +93,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Agent.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Agent.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/DataStructures/Agent.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="434">
-              <caret line="73" column="69" lean-forward="false" selection-start-line="73" selection-start-column="60" selection-end-line="73" selection-end-column="69" />
+            <state relative-caret-position="417">
+              <caret line="81" column="0" lean-forward="true" selection-start-line="81" selection-start-column="0" selection-end-line="81" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -130,7 +120,7 @@
       <file leaf-file-name="Kmotion.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Kinematic/Kmotion.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1020">
+            <state relative-caret-position="621">
               <caret line="66" column="56" lean-forward="false" selection-start-line="66" selection-start-column="56" selection-end-line="66" selection-end-column="56" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
@@ -156,6 +146,7 @@
       <find>main</find>
       <find>angular</find>
       <find>updateCrumbs</find>
+      <find>currTime</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -185,11 +176,11 @@
         <option value="$PROJECT_DIR$/src/DataStructures/Character.java" />
         <option value="$PROJECT_DIR$/src/Other/Helper.java" />
         <option value="$PROJECT_DIR$/src/Kinematic/Kmotion.java" />
-        <option value="$PROJECT_DIR$/src/DataStructures/Agent.java" />
         <option value="$PROJECT_DIR$/src/Steering/Arrive.java" />
         <option value="$PROJECT_DIR$/src/Steering/Align.java" />
         <option value="$PROJECT_DIR$/src/Steering/Smotion.java" />
         <option value="$PROJECT_DIR$/src/Kinematic/BasicMotion.java" />
+        <option value="$PROJECT_DIR$/src/DataStructures/Agent.java" />
       </list>
     </option>
   </component>
@@ -756,27 +747,28 @@
       <workItem from="1487016243710" duration="8004000" />
       <workItem from="1487091375641" duration="4152000" />
       <workItem from="1487130556720" duration="28862000" />
-      <workItem from="1487300988740" duration="2889000" />
+      <workItem from="1487300988740" duration="3711000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="115629000" />
+    <option name="totallyTimeSpent" value="116451000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="0" width="1932" height="1057" extended-state="1" />
+    <frame x="-7" y="0" width="1932" height="1057" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32946146" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32946146" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3336853" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3336853" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -793,7 +785,6 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32946146" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32845187" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
@@ -850,9 +841,9 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#3704#0" expanded="true" />
+            <element signature="e#0#3687#0" expanded="true" />
             <element signature="imports" expanded="true" />
-            <element signature="method#init#0;class#BasicMotion#0" expanded="false" />
+            <element signature="method#checkOrientationReached#0;class#BasicMotion#0" expanded="false" />
             <element signature="method#drawCrumbs#0;class#BasicMotion#0" expanded="false" />
           </folding>
         </state>
@@ -895,9 +886,9 @@
         <state relative-caret-position="425">
           <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
           <folding>
-            <element signature="e#0#3704#0" expanded="true" />
+            <element signature="e#0#3687#0" expanded="true" />
             <element signature="imports" expanded="true" />
-            <element signature="method#init#0;class#BasicMotion#0" expanded="false" />
+            <element signature="method#checkOrientationReached#0;class#BasicMotion#0" expanded="false" />
             <element signature="method#drawCrumbs#0;class#BasicMotion#0" expanded="false" />
           </folding>
         </state>
@@ -940,9 +931,9 @@
         <state relative-caret-position="289">
           <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
           <folding>
-            <element signature="e#0#3704#0" expanded="true" />
+            <element signature="e#0#3687#0" expanded="true" />
             <element signature="imports" expanded="true" />
-            <element signature="method#init#0;class#BasicMotion#0" expanded="false" />
+            <element signature="method#checkOrientationReached#0;class#BasicMotion#0" expanded="false" />
             <element signature="method#drawCrumbs#0;class#BasicMotion#0" expanded="false" />
           </folding>
         </state>
@@ -985,9 +976,9 @@
         <state relative-caret-position="561">
           <caret line="33" column="0" lean-forward="true" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
           <folding>
-            <element signature="e#0#3704#0" expanded="true" />
+            <element signature="e#0#3687#0" expanded="true" />
             <element signature="imports" expanded="true" />
-            <element signature="method#init#0;class#BasicMotion#0" expanded="false" />
+            <element signature="method#checkOrientationReached#0;class#BasicMotion#0" expanded="false" />
             <element signature="method#drawCrumbs#0;class#BasicMotion#0" expanded="false" />
           </folding>
         </state>
@@ -1008,9 +999,9 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#3704#0" expanded="true" />
+            <element signature="e#0#3687#0" expanded="true" />
             <element signature="imports" expanded="true" />
-            <element signature="method#init#0;class#BasicMotion#0" expanded="false" />
+            <element signature="method#checkOrientationReached#0;class#BasicMotion#0" expanded="false" />
             <element signature="method#drawCrumbs#0;class#BasicMotion#0" expanded="false" />
           </folding>
         </state>
@@ -1021,9 +1012,9 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#3704#0" expanded="true" />
+            <element signature="e#0#3687#0" expanded="true" />
             <element signature="imports" expanded="true" />
-            <element signature="method#init#0;class#BasicMotion#0" expanded="false" />
+            <element signature="method#checkOrientationReached#0;class#BasicMotion#0" expanded="false" />
             <element signature="method#drawCrumbs#0;class#BasicMotion#0" expanded="false" />
           </folding>
         </state>
@@ -1034,9 +1025,9 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#3704#0" expanded="true" />
+            <element signature="e#0#3687#0" expanded="true" />
             <element signature="imports" expanded="true" />
-            <element signature="method#init#0;class#BasicMotion#0" expanded="false" />
+            <element signature="method#checkOrientationReached#0;class#BasicMotion#0" expanded="false" />
             <element signature="method#drawCrumbs#0;class#BasicMotion#0" expanded="false" />
           </folding>
         </state>
@@ -1047,9 +1038,9 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#3704#0" expanded="true" />
+            <element signature="e#0#3687#0" expanded="true" />
             <element signature="imports" expanded="true" />
-            <element signature="method#init#0;class#BasicMotion#0" expanded="false" />
+            <element signature="method#checkOrientationReached#0;class#BasicMotion#0" expanded="false" />
             <element signature="method#drawCrumbs#0;class#BasicMotion#0" expanded="false" />
           </folding>
         </state>
@@ -1060,9 +1051,9 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#3704#0" expanded="true" />
+            <element signature="e#0#3687#0" expanded="true" />
             <element signature="imports" expanded="true" />
-            <element signature="method#init#0;class#BasicMotion#0" expanded="false" />
+            <element signature="method#checkOrientationReached#0;class#BasicMotion#0" expanded="false" />
             <element signature="method#drawCrumbs#0;class#BasicMotion#0" expanded="false" />
           </folding>
         </state>
@@ -1073,9 +1064,9 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#3704#0" expanded="true" />
+            <element signature="e#0#3687#0" expanded="true" />
             <element signature="imports" expanded="true" />
-            <element signature="method#init#0;class#BasicMotion#0" expanded="false" />
+            <element signature="method#checkOrientationReached#0;class#BasicMotion#0" expanded="false" />
             <element signature="method#drawCrumbs#0;class#BasicMotion#0" expanded="false" />
           </folding>
         </state>
@@ -1086,9 +1077,9 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#3704#0" expanded="true" />
+            <element signature="e#0#3687#0" expanded="true" />
             <element signature="imports" expanded="true" />
-            <element signature="method#init#0;class#BasicMotion#0" expanded="false" />
+            <element signature="method#checkOrientationReached#0;class#BasicMotion#0" expanded="false" />
             <element signature="method#drawCrumbs#0;class#BasicMotion#0" expanded="false" />
           </folding>
         </state>
@@ -1099,9 +1090,9 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#3704#0" expanded="true" />
+            <element signature="e#0#3687#0" expanded="true" />
             <element signature="imports" expanded="true" />
-            <element signature="method#init#0;class#BasicMotion#0" expanded="false" />
+            <element signature="method#checkOrientationReached#0;class#BasicMotion#0" expanded="false" />
             <element signature="method#drawCrumbs#0;class#BasicMotion#0" expanded="false" />
           </folding>
         </state>
@@ -1112,9 +1103,9 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#3704#0" expanded="true" />
+            <element signature="e#0#3687#0" expanded="true" />
             <element signature="imports" expanded="true" />
-            <element signature="method#init#0;class#BasicMotion#0" expanded="false" />
+            <element signature="method#checkOrientationReached#0;class#BasicMotion#0" expanded="false" />
             <element signature="method#drawCrumbs#0;class#BasicMotion#0" expanded="false" />
           </folding>
         </state>
@@ -1125,9 +1116,9 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#3704#0" expanded="true" />
+            <element signature="e#0#3687#0" expanded="true" />
             <element signature="imports" expanded="true" />
-            <element signature="method#init#0;class#BasicMotion#0" expanded="false" />
+            <element signature="method#checkOrientationReached#0;class#BasicMotion#0" expanded="false" />
             <element signature="method#drawCrumbs#0;class#BasicMotion#0" expanded="false" />
           </folding>
         </state>
@@ -1139,9 +1130,9 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#3704#0" expanded="true" />
+            <element signature="e#0#3687#0" expanded="true" />
             <element signature="imports" expanded="true" />
-            <element signature="method#init#0;class#BasicMotion#0" expanded="false" />
+            <element signature="method#checkOrientationReached#0;class#BasicMotion#0" expanded="false" />
             <element signature="method#drawCrumbs#0;class#BasicMotion#0" expanded="false" />
           </folding>
         </state>
@@ -1153,9 +1144,9 @@
         <state relative-caret-position="136">
           <caret line="10" column="26" lean-forward="false" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
           <folding>
-            <element signature="e#0#3704#0" expanded="true" />
+            <element signature="e#0#3687#0" expanded="true" />
             <element signature="imports" expanded="true" />
-            <element signature="method#init#0;class#BasicMotion#0" expanded="false" />
+            <element signature="method#checkOrientationReached#0;class#BasicMotion#0" expanded="false" />
             <element signature="method#drawCrumbs#0;class#BasicMotion#0" expanded="false" />
           </folding>
         </state>
@@ -1167,9 +1158,9 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#3704#0" expanded="true" />
+            <element signature="e#0#3687#0" expanded="true" />
             <element signature="imports" expanded="true" />
-            <element signature="method#init#0;class#BasicMotion#0" expanded="false" />
+            <element signature="method#checkOrientationReached#0;class#BasicMotion#0" expanded="false" />
             <element signature="method#drawCrumbs#0;class#BasicMotion#0" expanded="false" />
           </folding>
         </state>
@@ -1181,9 +1172,9 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#3704#0" expanded="true" />
+            <element signature="e#0#3687#0" expanded="true" />
             <element signature="imports" expanded="true" />
-            <element signature="method#init#0;class#BasicMotion#0" expanded="false" />
+            <element signature="method#checkOrientationReached#0;class#BasicMotion#0" expanded="false" />
             <element signature="method#drawCrumbs#0;class#BasicMotion#0" expanded="false" />
           </folding>
         </state>
@@ -1216,9 +1207,42 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Steering/Align.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="629">
+          <caret line="41" column="45" lean-forward="false" selection-start-line="41" selection-start-column="22" selection-end-line="41" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1252#1253#0" expanded="true" />
+            <element signature="e#1330#1331#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Other/Helper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="18" lean-forward="false" selection-start-line="25" selection-start-column="18" selection-end-line="25" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Steering/Smotion.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="383">
+          <caret line="40" column="31" lean-forward="true" selection-start-line="40" selection-start-column="31" selection-end-line="40" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#Smotion#1;class#Smotion#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Kinematic/Kmotion.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1020">
+        <state relative-caret-position="621">
           <caret line="66" column="56" lean-forward="false" selection-start-line="66" selection-start-column="56" selection-end-line="66" selection-end-column="56" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
@@ -1228,14 +1252,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Steering/Align.java">
+    <entry file="file://$PROJECT_DIR$/src/DataStructures/GameObject.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="629">
-          <caret line="41" column="45" lean-forward="false" selection-start-line="41" selection-start-column="22" selection-end-line="41" selection-end-column="45" />
+        <state relative-caret-position="136">
+          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1252#1253#0" expanded="true" />
-            <element signature="e#1330#1331#0" expanded="true" />
+            <element signature="n#!!doc" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1252,56 +1274,25 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Other/Helper.java">
+    <entry file="file://$PROJECT_DIR$/src/Kinematic/BasicMotion.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" column="18" lean-forward="false" selection-start-line="25" selection-start-column="18" selection-end-line="25" selection-end-column="18" />
+        <state relative-caret-position="17">
+          <caret line="76" column="21" lean-forward="false" selection-start-line="76" selection-start-column="21" selection-end-line="76" selection-end-column="21" />
           <folding>
+            <element signature="e#0#3687#0" expanded="true" />
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/DataStructures/GameObject.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
+            <element signature="method#checkOrientationReached#0;class#BasicMotion#0" expanded="false" />
+            <element signature="method#drawCrumbs#0;class#BasicMotion#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/DataStructures/Agent.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="434">
-          <caret line="73" column="69" lean-forward="false" selection-start-line="73" selection-start-column="60" selection-end-line="73" selection-end-column="69" />
+        <state relative-caret-position="417">
+          <caret line="81" column="0" lean-forward="true" selection-start-line="81" selection-start-column="0" selection-end-line="81" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Kinematic/BasicMotion.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="108" column="88" lean-forward="false" selection-start-line="108" selection-start-column="88" selection-end-line="108" selection-end-column="88" />
-          <folding>
-            <element signature="e#0#3704#0" expanded="true" />
-            <element signature="imports" expanded="true" />
-            <element signature="method#init#0;class#BasicMotion#0" expanded="false" />
-            <element signature="method#drawCrumbs#0;class#BasicMotion#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Steering/Smotion.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="383">
-          <caret line="40" column="31" lean-forward="true" selection-start-line="40" selection-start-column="31" selection-end-line="40" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#Smotion#1;class#Smotion#0" expanded="false" />
           </folding>
         </state>
       </provider>

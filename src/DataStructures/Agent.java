@@ -71,8 +71,8 @@ public class Agent extends GameObject {
     {
         long deltaTime = (time - lastTime);
 
-        setPosition(position.add(PVector.mult(getVelocity(),deltaTime)));
-        float goalOrientation = orientation + rotation * deltaTime;
+        setPosition(position.add(velocity));
+        float goalOrientation = orientation + rotation; //* deltaTime
         goalOrientation = Helper.mapToRange(goalOrientation);
         //setOrientation(goalOrientation);
 

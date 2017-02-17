@@ -22,7 +22,7 @@ import java.util.ArrayList;
     Kmotion kseek;
     boolean targetReached;
     int targetIndex;
-    long crumbTime, currTime;
+    long crumbTime, currTime, time;
 
 
 
@@ -73,12 +73,13 @@ import java.util.ArrayList;
         body.setFill(0);
         head.setFill(0);
 
-        crumbTime = System.currentTimeMillis();
-        currTime = System.currentTimeMillis();
+        crumbTime = 0;
+        currTime = 0;
+        time = 0;
     }
 
     public void updateCrumbs(){
-        if(crumbs.size() > 54)  //54
+        if(crumbs.size() > 70)  //54
         {
             crumbs.remove(0);
         }
@@ -101,12 +102,12 @@ import java.util.ArrayList;
 
     public void setup() {
         init();
-        kseek = new Kmotion(.2f,PI/450,player,t2);
+        kseek = new Kmotion(5.f,PI/450,player,t2);
     }
 
     public void draw() {
         background(255);
-        long time = System.currentTimeMillis(); // use a counter instead of system time.
+        time++;//time = System.currentTimeMillis(); // use a counter instead of system time.
         targetReached = Helper.checkTargetReached(player,targets.get(targetIndex));
         if(targetReached) {
             updateTarget();
@@ -116,12 +117,12 @@ import java.util.ArrayList;
         kseek.setTarget(targets.get(targetIndex));
         kseek.getKinematic();
 
-        if(targetReached || (time - currTime > 10) )
-        {
+        //if(targetReached || (time - currTime > 1) )
+        //{
             player.update(time);
             //player.setOrientation(player.getNewOrientation());
-            currTime = time;
-        }
+            //currTime = time;
+        //}
 
         //player.update(time);
 
@@ -129,7 +130,7 @@ import java.util.ArrayList;
         {
             player.setRotation(0);
         }
-        if(time - crumbTime > 100) {
+        if(time - crumbTime > 3) {
             updateCrumbs();
             crumbTime = time;
         }
