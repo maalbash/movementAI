@@ -13,6 +13,8 @@ public class Arrive extends PApplet{
     PShape fullShape,body,head,breadCrumb;
     Agent player;
     PVector initPos;
+    Smotion Sarrive;
+    Align Salign;
     ArrayList<PVector> crumbs;
     long crumbTime;
 
@@ -60,6 +62,8 @@ public class Arrive extends PApplet{
 
     public void setup() {
         init();
+        Sarrive = new Smotion(.25f,.1f,1.f,2.f, 2.5f);
+        Salign = new Align(.25f,.1f,1.f, 2.f, 2.5f );
     }
 
     public void draw(){
@@ -67,6 +71,15 @@ public class Arrive extends PApplet{
 
         long time = System.currentTimeMillis();
 
+        player.update(time);
+
+        if(time-crumbTime > 100)
+        {
+            updateCrumbs();
+            crumbTime = time;
+        }
+
+        drawCrumbs();
 
         pushMatrix();
         translate(player.getPosition().x,player.getPosition().y);
@@ -78,6 +91,11 @@ public class Arrive extends PApplet{
     public void mousePressed(){
         PVector tpos = new PVector(mouseX,mouseY);
         GameObject target = new GameObject(tpos,0);
+
+        PVector dir = PVector.sub(tpos,player.getPosition());
+        Sarrive.setTarget(target);
+        Salign.setTarget(target);
+        Salign.getTarget().setOrientation(dir.heading());
     }
 
     public static void main(String args[]){ PApplet.main(new String[]{"Steering.Arrive"}); }

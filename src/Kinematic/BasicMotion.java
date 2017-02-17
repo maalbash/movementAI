@@ -5,8 +5,8 @@
 package Kinematic;
 
 import DataStructures.*;
+import Other.Helper;
 import processing.core.PApplet;
-import processing.core.PConstants;
 import processing.core.PShape;
 
 import processing.core.PVector;
@@ -20,12 +20,11 @@ import java.util.ArrayList;
     ArrayList<GameObject> targets;
     ArrayList<PVector> crumbs;
     Kmotion kseek;
+    boolean targetReached;
     int targetIndex;
-    long crumbTime;
+    long crumbTime, currTime;
 
-    public boolean checkTargetReached() {
-        return((Math.abs(targets.get(targetIndex).getPosition().x - player.getPosition().x) <= 1.f) && (Math.abs(targets.get(targetIndex).getPosition().y - player.getPosition().y) <= 1.f));
-    }
+
 
     public boolean checkOrientationReached(Agent O1, GameObject O2){
         return Math.abs(O2.getOrientation()- O1.getOrientation()) % 2 * PI < PI/30;
@@ -75,10 +74,11 @@ import java.util.ArrayList;
         head.setFill(0);
 
         crumbTime = System.currentTimeMillis();
+        currTime = System.currentTimeMillis();
     }
 
     public void updateCrumbs(){
-        if(crumbs.size() > 54)
+        if(crumbs.size() > 54)  //54
         {
             crumbs.remove(0);
         }
@@ -101,18 +101,29 @@ import java.util.ArrayList;
 
     public void setup() {
         init();
-        kseek = new Kmotion(.25f,PI/450,player,t2);
+        kseek = new Kmotion(.2f,PI/450,player,t2);
     }
 
     public void draw() {
         background(255);
-        long time = System.currentTimeMillis();
-
-        if(checkTargetReached())
+        long time = System.currentTimeMillis(); // use a counter instead of system time.
+        targetReached = Helper.checkTargetReached(player,targets.get(targetIndex));
+        if(targetReached) {
             updateTarget();
+
+        }
+
         kseek.setTarget(targets.get(targetIndex));
-        kseek.getSteering();
-        player.update(time);
+        kseek.getKinematic();
+
+        if(targetReached || (time - currTime > 10) )
+        {
+            player.update(time);
+            //player.setOrientation(player.getNewOrientation());
+            currTime = time;
+        }
+
+        //player.update(time);
 
         if(checkOrientationReached(player,targets.get(targetIndex)))
         {

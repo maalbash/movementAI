@@ -6,6 +6,7 @@ package Kinematic;
 
 import DataStructures.Agent;
 import DataStructures.GameObject;
+import Other.Helper;
 import processing.core.PConstants;
 import processing.core.PVector;
 
@@ -49,14 +50,27 @@ public class Kmotion {
         }
     }
 
-    public void getSteering()
+    public void getKinematic()
     {
         PVector vel = PVector.sub(this.target.getPosition(),this.player.getPosition());
         vel.normalize();
         vel = vel.mult(maxSpeed);
 
         this.player.setVelocity(vel);
+
+        if(this.player.getVelocity().mag() != 0)
+        {
+            float goalOrientation = (float)Math.atan(this.getTarget().getPosition().x/this.getTarget().getPosition().y);
+            goalOrientation = Helper.mapToRange(goalOrientation);
+            float goalRot = goalOrientation - this.player.getOrientation();
+            float dir = goalRot/Math.abs(goalRot);
+            goalRot = (goalRot < maxRotation)? goalRot : dir * maxRotation;
+            this.player.setRotation(goalRot);
+        }
+
         orientationReached();
+
+        //orientationReached();
         //this.player.setOrientation(this.player.getNewOrientation());
     }
 }

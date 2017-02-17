@@ -5,6 +5,7 @@
 
 package DataStructures;
 
+import Other.Helper;
 import processing.core.PConstants;
 import processing.core.PVector;
 
@@ -12,6 +13,27 @@ public class Agent extends GameObject {
 
     PVector velocity;
     float rotation;
+    PVector linear;
+    float angular;
+
+
+    public PVector getLinear() {
+        return linear;
+    }
+
+    public void setLinear(PVector linear) {
+        this.linear = linear;
+    }
+
+    public float getAngular() {
+        return angular;
+    }
+
+    public void setAngular(float angular) {
+        this.angular = angular;
+    }
+
+
     long lastTime;
 
     public Agent(){
@@ -43,17 +65,7 @@ public class Agent extends GameObject {
         this.rotation = rotation;
     }
 
-    public float mapToRange(float goalOrientation)
-    {
-        float r = goalOrientation % PConstants.PI * 2;
-        if (Math.abs(r) <= PConstants.PI) {
-            return r;
-        }
-        else
-        {
-            return (r > PConstants.PI) ? r - 2 * PConstants.PI : r + 2 * PConstants.PI;
-        }
-    }
+
 
     public void update(long time)
     {
@@ -61,15 +73,16 @@ public class Agent extends GameObject {
 
         setPosition(position.add(PVector.mult(getVelocity(),deltaTime)));
         float goalOrientation = orientation + rotation * deltaTime;
-        goalOrientation = mapToRange(goalOrientation);
-        setOrientation(goalOrientation);
+        goalOrientation = Helper.mapToRange(goalOrientation);
+        //setOrientation(goalOrientation);
 
+        setOrientation(this.getNewOrientation());
         lastTime = time;
     }
 
     public float getNewOrientation()
     {
-        if(this.getVelocity().mag() > .2f)
+        if(this.getVelocity().mag() > 0)
             return this.getVelocity().heading();
         return this.getOrientation();
     }
