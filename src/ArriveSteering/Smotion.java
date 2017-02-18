@@ -1,4 +1,4 @@
-package SteeringArrive;
+package ArriveSteering;
 
 import DataStructures.*;
 import processing.core.PVector;

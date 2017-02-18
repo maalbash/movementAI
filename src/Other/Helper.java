@@ -2,19 +2,18 @@ package Other;
 
 import processing.core.PConstants;
 import DataStructures.*;
+import processing.core.PVector;
 
 /**
  * Created by mohz2 on 2/16/2017.
  */
 public class Helper {
-    public static float mapToRange(float goalOrientation)
-    {
+    public static float mapToRange(float goalOrientation) {
         float r = goalOrientation % (PConstants.PI * 2);
         if (Math.abs(r) <= PConstants.PI) {
             return r;
         }
-        else
-        {
+        else {
             return (r > PConstants.PI) ? r - 2 * PConstants.PI : r + 2 * PConstants.PI;
         }
     }
@@ -25,5 +24,22 @@ public class Helper {
 
     public static boolean checkOrientationReached(Agent O1, GameObject O2){
         return Math.abs(O2.getOrientation()- O1.getOrientation()) % 2 * PConstants.PI < PConstants.PI/1000;
+    }
+
+    public static void inFrame(Agent player, float bot, float right) {
+        PVector newPosition = new PVector(player.getPosition().x, player.getPosition().y);
+        if (player.getPosition().x > 0 && player.getPosition().x < right) {//x is correct
+            if (player.getPosition().y > bot || player.getPosition().y < 0) {// only y is not correct
+                newPosition.y = (player.getPosition().y > bot) ? (player.getPosition().y - bot) : (player.getPosition().y + bot);
+            }
+        } else {// x is not correct
+            if (player.getPosition().y > 0 && player.getPosition().y < bot) {//only x is not correct
+                newPosition.x = (player.getPosition().x > right) ? (player.getPosition().x - right) : (player.getPosition().x + right);
+            } else {// both x and y are messed up
+                newPosition.x = (player.getPosition().x > right) ? (player.getPosition().x - right) : (player.getPosition().x + right);
+                newPosition.y = (player.getPosition().y > bot) ? (player.getPosition().y - bot) : (player.getPosition().y + bot);
+            }
+        }
+        player.setPosition(newPosition);
     }
 }

@@ -1,4 +1,4 @@
-package SteeringArrive;
+package ArriveSteering;
 
 import processing.core.PApplet;
 import processing.core.PConstants;
@@ -68,7 +68,7 @@ public class Arrive extends PApplet{
     public void setup() {
         init();
         Sarrive = new Smotion(5.f,2.f,5.f,20.f, 2.f);
-        Salign = new Align( PConstants.PI/300, PConstants.PI/30,PConstants.PI/10, PConstants.PI/2, 30f );
+        Salign = new Align( PConstants.PI/50, PConstants.PI/30,PConstants.PI/15, PConstants.PI/2, 30f );
         Sarrive.setPlayer(player);
         Sarrive.setTarget(initTarget);
         Salign.setPlayer(player);
@@ -113,5 +113,5 @@ public class Arrive extends PApplet{
         Salign.getTarget().setOrientation(dir.heading());
     }
 
-    public static void main(String args[]){ PApplet.main(new String[]{"SteeringArrive.Arrive"}); }
+    public static void main(String args[]){ PApplet.main(new String[]{"ArriveSteering.Arrive"}); }
 }

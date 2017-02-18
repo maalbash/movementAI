@@ -1,6 +1,6 @@
-package SteeringWander;
+package WanderSteering;
 
-import SteeringArrive.*;
+import ArriveSteering.*;
 import DataStructures.*;
 import processing.core.PVector;
 

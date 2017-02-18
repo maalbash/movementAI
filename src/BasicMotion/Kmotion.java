@@ -2,7 +2,7 @@
  * Created by mohz2 on 2/6/2017.
  */
 
-package Kinematic;
+package BasicMotion;
 
 import DataStructures.Agent;
 import DataStructures.GameObject;

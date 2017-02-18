@@ -2,20 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="69555fd6-b08e-4ead-9766-10e56c3ece64" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/SteeringWander/Wander.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/SteeringWander/Wmotion.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/First/Steering/Align.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/First/Steering/Arrive.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/First/Steering/Smotion.class" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Steering/Align.java" afterPath="$PROJECT_DIR$/src/SteeringArrive/Align.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Steering/Arrive.java" afterPath="$PROJECT_DIR$/src/SteeringArrive/Arrive.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Steering/Smotion.java" afterPath="$PROJECT_DIR$/src/SteeringArrive/Smotion.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/First/DataStructures/Agent.class" afterPath="$PROJECT_DIR$/out/production/First/DataStructures/Agent.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/First/Kinematic/BasicMotion.class" afterPath="$PROJECT_DIR$/out/production/First/Kinematic/BasicMotion.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/First/Other/Helper.class" afterPath="$PROJECT_DIR$/out/production/First/Other/Helper.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/FlockingBehavior/Flocking.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/First/Kinematic/BasicMotion.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/First/Kinematic/Kmotion.class" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Kinematic/BasicMotion.java" afterPath="$PROJECT_DIR$/src/BasicMotion/Kinematic.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Kinematic/Kmotion.java" afterPath="$PROJECT_DIR$/src/BasicMotion/Kmotion.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/SteeringArrive/Align.java" afterPath="$PROJECT_DIR$/src/ArriveSteering/Align.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/SteeringArrive/Arrive.java" afterPath="$PROJECT_DIR$/src/ArriveSteering/Arrive.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/SteeringArrive/Smotion.java" afterPath="$PROJECT_DIR$/src/ArriveSteering/Smotion.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/SteeringWander/Wander.java" afterPath="$PROJECT_DIR$/src/WanderSteering/Wander.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/SteeringWander/Wmotion.java" afterPath="$PROJECT_DIR$/src/WanderSteering/Wmotion.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/DataStructures/Agent.java" afterPath="$PROJECT_DIR$/src/DataStructures/Agent.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Kinematic/BasicMotion.java" afterPath="$PROJECT_DIR$/src/Kinematic/BasicMotion.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Other/Helper.java" afterPath="$PROJECT_DIR$/src/Other/Helper.java" />
     </list>
     <ignored path="First.iws" />
@@ -38,26 +35,26 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="BasicMotion.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Kinematic/BasicMotion.java">
+      <file leaf-file-name="Kinematic.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/BasicMotion/Kinematic.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="645">
-              <caret line="45" column="35" lean-forward="false" selection-start-line="45" selection-start-column="35" selection-end-line="45" selection-end-column="35" />
+            <state relative-caret-position="407">
+              <caret line="104" column="39" lean-forward="false" selection-start-line="104" selection-start-column="39" selection-end-line="104" selection-end-column="39" />
               <folding>
                 <element signature="e#0#3652#0" expanded="true" />
                 <element signature="imports" expanded="true" />
-                <element signature="method#checkOrientationReached#0;class#BasicMotion#0" expanded="false" />
-                <element signature="method#drawCrumbs#0;class#BasicMotion#0" expanded="false" />
+                <element signature="method#checkOrientationReached#0;class#Kinematic#0" expanded="false" />
+                <element signature="method#drawCrumbs#0;class#Kinematic#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="Arrive.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/SteeringArrive/Arrive.java">
+        <entry file="file://$PROJECT_DIR$/src/ArriveSteering/Arrive.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="770">
-              <caret line="87" column="9" lean-forward="true" selection-start-line="84" selection-start-column="8" selection-end-line="87" selection-end-column="9" />
+            <state relative-caret-position="935">
+              <caret line="70" column="96" lean-forward="false" selection-start-line="70" selection-start-column="96" selection-end-line="70" selection-end-column="96" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#updateCrumbs#0;class#Arrive#0" expanded="false" />
@@ -67,15 +64,15 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Wander.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/SteeringWander/Wander.java">
+      <file leaf-file-name="Wander.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/WanderSteering/Wander.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="138">
-              <caret line="58" column="14" lean-forward="false" selection-start-line="58" selection-start-column="14" selection-end-line="58" selection-end-column="14" />
+            <state relative-caret-position="1563">
+              <caret line="98" column="43" lean-forward="true" selection-start-line="98" selection-start-column="43" selection-end-line="98" selection-end-column="43" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1587#1588#0" expanded="true" />
-                <element signature="e#1616#1617#0" expanded="true" />
+                <element signature="e#1599#1600#0" expanded="true" />
+                <element signature="e#1628#1629#0" expanded="true" />
                 <element signature="method#drawCrumbs#0;class#Wander#0" expanded="false" />
               </folding>
             </state>
@@ -83,7 +80,7 @@
         </entry>
       </file>
       <file leaf-file-name="Wmotion.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/SteeringWander/Wmotion.java">
+        <entry file="file://$PROJECT_DIR$/src/WanderSteering/Wmotion.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-256">
               <caret line="61" column="33" lean-forward="false" selection-start-line="61" selection-start-column="33" selection-end-line="61" selection-end-column="33" />
@@ -127,10 +124,10 @@
         </entry>
       </file>
       <file leaf-file-name="Smotion.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/SteeringArrive/Smotion.java">
+        <entry file="file://$PROJECT_DIR$/src/ArriveSteering/Smotion.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="213">
-              <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+              <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -139,9 +136,9 @@
         </entry>
       </file>
       <file leaf-file-name="Align.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/SteeringArrive/Align.java">
+        <entry file="file://$PROJECT_DIR$/src/ArriveSteering/Align.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-170">
+            <state relative-caret-position="94">
               <caret line="10" column="19" lean-forward="false" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
               <folding>
                 <element signature="e#1313#1314#0" expanded="true" />
@@ -151,13 +148,16 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Helper.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Helper.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Other/Helper.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="442">
-              <caret line="26" column="106" lean-forward="false" selection-start-line="26" selection-start-column="106" selection-end-line="26" selection-end-column="106" />
+              <caret line="45" column="0" lean-forward="true" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="method#checkTargetReached#0;class#Helper#0" expanded="false" />
+                <element signature="method#checkOrientationReached#0;class#Helper#0" expanded="false" />
+                <element signature="method#inFrame#0;class#Helper#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -166,7 +166,7 @@
       <file leaf-file-name="Agent.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/DataStructures/Agent.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="969">
+            <state relative-caret-position="1020">
               <caret line="76" column="38" lean-forward="false" selection-start-line="76" selection-start-column="23" selection-end-line="76" selection-end-column="38" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
@@ -176,20 +176,8 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GameObject.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/DataStructures/GameObject.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Kmotion.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Kinematic/Kmotion.java">
+        <entry file="file://$PROJECT_DIR$/src/BasicMotion/Kmotion.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1037">
               <caret line="66" column="56" lean-forward="false" selection-start-line="66" selection-start-column="56" selection-end-line="66" selection-end-column="56" />
@@ -197,6 +185,20 @@
                 <element signature="n#!!doc" expanded="true" />
                 <element signature="imports" expanded="true" />
                 <element signature="method#Kmotion#0;class#Kmotion#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Flocking.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/FlockingBehavior/Flocking.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#232#233#0" expanded="true" />
+                <element signature="e#261#262#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -250,12 +252,16 @@
         <option value="$PROJECT_DIR$/src/Steering/Align.java" />
         <option value="$PROJECT_DIR$/src/Steering/Arrive.java" />
         <option value="$PROJECT_DIR$/src/DataStructures/Agent.java" />
-        <option value="$PROJECT_DIR$/src/Other/Helper.java" />
         <option value="$PROJECT_DIR$/src/Kinematic/BasicMotion.java" />
-        <option value="$PROJECT_DIR$/src/SteeringArrive/Arrive.java" />
         <option value="$PROJECT_DIR$/src/SteeringArrive/Align.java" />
         <option value="$PROJECT_DIR$/src/SteeringWander/Wmotion.java" />
         <option value="$PROJECT_DIR$/src/SteeringWander/Wander.java" />
+        <option value="$PROJECT_DIR$/src/SteeringArrive/Arrive.java" />
+        <option value="$PROJECT_DIR$/src/ArriveSteering/Arrive.java" />
+        <option value="$PROJECT_DIR$/src/BasicMotion/Kinematic.java" />
+        <option value="$PROJECT_DIR$/src/FlockingBehavior/Flocking.java" />
+        <option value="$PROJECT_DIR$/src/WanderSteering/Wander.java" />
+        <option value="$PROJECT_DIR$/src/Other/Helper.java" />
       </list>
     </option>
   </component>
@@ -314,6 +320,24 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="First" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="First" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Other" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scratches" />
@@ -349,9 +373,9 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
-    <configuration default="false" name="BasicMotion" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="Kinematic" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" value="Kinematic.BasicMotion" />
+      <option name="MAIN_CLASS_NAME" value="BasicMotion.Kinematic" />
       <option name="VM_PARAMETERS" value="" />
       <option name="PROGRAM_PARAMETERS" value="processing.core.PApplet" />
       <option name="WORKING_DIRECTORY" value="" />
@@ -367,11 +391,11 @@
     <configuration default="false" name="Arrive" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="SteeringArrive.*" />
+          <option name="PATTERN" value="ArriveSteering.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="SteeringArrive.Arrive" />
+      <option name="MAIN_CLASS_NAME" value="ArriveSteering.Arrive" />
       <option name="VM_PARAMETERS" value="" />
       <option name="PROGRAM_PARAMETERS" value="processing.core.PApplet" />
       <option name="WORKING_DIRECTORY" value="" />
@@ -387,11 +411,11 @@
     <configuration default="false" name="Wander" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="SteeringWander.*" />
+          <option name="PATTERN" value="WanderSteering.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="SteeringWander.Wander" />
+      <option name="MAIN_CLASS_NAME" value="WanderSteering.Wander" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" />
@@ -764,15 +788,15 @@
     </configuration>
     <list size="4">
       <item index="0" class="java.lang.String" itemvalue="Application.Main" />
-      <item index="1" class="java.lang.String" itemvalue="Application.BasicMotion" />
+      <item index="1" class="java.lang.String" itemvalue="Application.Kinematic" />
       <item index="2" class="java.lang.String" itemvalue="Application.Arrive" />
       <item index="3" class="java.lang.String" itemvalue="Application.Wander" />
     </list>
     <recent_temporary>
       <list size="4">
         <item index="0" class="java.lang.String" itemvalue="Application.Wander" />
-        <item index="1" class="java.lang.String" itemvalue="Application.Arrive" />
-        <item index="2" class="java.lang.String" itemvalue="Application.BasicMotion" />
+        <item index="1" class="java.lang.String" itemvalue="Application.Kinematic" />
+        <item index="2" class="java.lang.String" itemvalue="Application.Arrive" />
         <item index="3" class="java.lang.String" itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -844,12 +868,12 @@
       <workItem from="1487016243710" duration="8004000" />
       <workItem from="1487091375641" duration="4152000" />
       <workItem from="1487130556720" duration="28862000" />
-      <workItem from="1487300988740" duration="28879000" />
+      <workItem from="1487300988740" duration="34278000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="141619000" />
+    <option name="totallyTimeSpent" value="147018000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="0" width="1932" height="1057" extended-state="0" />
@@ -902,7 +926,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="41" />
+      <option name="time" value="42" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -911,19 +935,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Kinematic/BasicMotion.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#3652#0" expanded="true" />
-            <element signature="imports" expanded="true" />
-            <element signature="method#checkOrientationReached#0;class#BasicMotion#0" expanded="false" />
-            <element signature="method#drawCrumbs#0;class#BasicMotion#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/DataStructures/Agent.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="680">
@@ -945,7 +956,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Kinematic/Kmotion.java">
+    <entry file="file://$PROJECT_DIR$/src/BasicMotion/Kmotion.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="646">
           <caret line="38" column="5" lean-forward="true" selection-start-line="38" selection-start-column="5" selection-end-line="38" selection-end-column="5" />
@@ -957,15 +968,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Kinematic/BasicMotion.java">
+    <entry file="file://$PROJECT_DIR$/src/BasicMotion/Kinematic.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
           <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
           <folding>
             <element signature="e#0#3652#0" expanded="true" />
             <element signature="imports" expanded="true" />
-            <element signature="method#checkOrientationReached#0;class#BasicMotion#0" expanded="false" />
-            <element signature="method#drawCrumbs#0;class#BasicMotion#0" expanded="false" />
+            <element signature="method#checkOrientationReached#0;class#Kinematic#0" expanded="false" />
+            <element signature="method#drawCrumbs#0;class#Kinematic#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -991,7 +1002,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Kinematic/Kmotion.java">
+    <entry file="file://$PROJECT_DIR$/src/BasicMotion/Kmotion.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="544">
           <caret line="37" column="21" lean-forward="false" selection-start-line="37" selection-start-column="21" selection-end-line="37" selection-end-column="21" />
@@ -1003,15 +1014,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Kinematic/BasicMotion.java">
+    <entry file="file://$PROJECT_DIR$/src/BasicMotion/Kinematic.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
           <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
           <folding>
             <element signature="e#0#3652#0" expanded="true" />
             <element signature="imports" expanded="true" />
-            <element signature="method#checkOrientationReached#0;class#BasicMotion#0" expanded="false" />
-            <element signature="method#drawCrumbs#0;class#BasicMotion#0" expanded="false" />
+            <element signature="method#checkOrientationReached#0;class#Kinematic#0" expanded="false" />
+            <element signature="method#drawCrumbs#0;class#Kinematic#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1037,7 +1048,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Kinematic/Kmotion.java">
+    <entry file="file://$PROJECT_DIR$/src/BasicMotion/Kmotion.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="629">
           <caret line="42" column="0" lean-forward="false" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
@@ -1049,15 +1060,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Kinematic/BasicMotion.java">
+    <entry file="file://$PROJECT_DIR$/src/BasicMotion/Kinematic.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="561">
           <caret line="33" column="0" lean-forward="true" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
           <folding>
             <element signature="e#0#3652#0" expanded="true" />
             <element signature="imports" expanded="true" />
-            <element signature="method#checkOrientationReached#0;class#BasicMotion#0" expanded="false" />
-            <element signature="method#drawCrumbs#0;class#BasicMotion#0" expanded="false" />
+            <element signature="method#checkOrientationReached#0;class#Kinematic#0" expanded="false" />
+            <element signature="method#drawCrumbs#0;class#Kinematic#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1073,188 +1084,188 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Kinematic/BasicMotion.java">
+    <entry file="file://$PROJECT_DIR$/src/BasicMotion/Kinematic.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#0#3652#0" expanded="true" />
             <element signature="imports" expanded="true" />
-            <element signature="method#checkOrientationReached#0;class#BasicMotion#0" expanded="false" />
-            <element signature="method#drawCrumbs#0;class#BasicMotion#0" expanded="false" />
+            <element signature="method#checkOrientationReached#0;class#Kinematic#0" expanded="false" />
+            <element signature="method#drawCrumbs#0;class#Kinematic#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Kinematic/BasicMotion.java">
+    <entry file="file://$PROJECT_DIR$/src/BasicMotion/Kinematic.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#0#3652#0" expanded="true" />
             <element signature="imports" expanded="true" />
-            <element signature="method#checkOrientationReached#0;class#BasicMotion#0" expanded="false" />
-            <element signature="method#drawCrumbs#0;class#BasicMotion#0" expanded="false" />
+            <element signature="method#checkOrientationReached#0;class#Kinematic#0" expanded="false" />
+            <element signature="method#drawCrumbs#0;class#Kinematic#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Kinematic/BasicMotion.java">
+    <entry file="file://$PROJECT_DIR$/src/BasicMotion/Kinematic.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#0#3652#0" expanded="true" />
             <element signature="imports" expanded="true" />
-            <element signature="method#checkOrientationReached#0;class#BasicMotion#0" expanded="false" />
-            <element signature="method#drawCrumbs#0;class#BasicMotion#0" expanded="false" />
+            <element signature="method#checkOrientationReached#0;class#Kinematic#0" expanded="false" />
+            <element signature="method#drawCrumbs#0;class#Kinematic#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Kinematic/BasicMotion.java">
+    <entry file="file://$PROJECT_DIR$/src/BasicMotion/Kinematic.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#0#3652#0" expanded="true" />
             <element signature="imports" expanded="true" />
-            <element signature="method#checkOrientationReached#0;class#BasicMotion#0" expanded="false" />
-            <element signature="method#drawCrumbs#0;class#BasicMotion#0" expanded="false" />
+            <element signature="method#checkOrientationReached#0;class#Kinematic#0" expanded="false" />
+            <element signature="method#drawCrumbs#0;class#Kinematic#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Kinematic/BasicMotion.java">
+    <entry file="file://$PROJECT_DIR$/src/BasicMotion/Kinematic.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#0#3652#0" expanded="true" />
             <element signature="imports" expanded="true" />
-            <element signature="method#checkOrientationReached#0;class#BasicMotion#0" expanded="false" />
-            <element signature="method#drawCrumbs#0;class#BasicMotion#0" expanded="false" />
+            <element signature="method#checkOrientationReached#0;class#Kinematic#0" expanded="false" />
+            <element signature="method#drawCrumbs#0;class#Kinematic#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Kinematic/BasicMotion.java">
+    <entry file="file://$PROJECT_DIR$/src/BasicMotion/Kinematic.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#0#3652#0" expanded="true" />
             <element signature="imports" expanded="true" />
-            <element signature="method#checkOrientationReached#0;class#BasicMotion#0" expanded="false" />
-            <element signature="method#drawCrumbs#0;class#BasicMotion#0" expanded="false" />
+            <element signature="method#checkOrientationReached#0;class#Kinematic#0" expanded="false" />
+            <element signature="method#drawCrumbs#0;class#Kinematic#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Kinematic/BasicMotion.java">
+    <entry file="file://$PROJECT_DIR$/src/BasicMotion/Kinematic.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#0#3652#0" expanded="true" />
             <element signature="imports" expanded="true" />
-            <element signature="method#checkOrientationReached#0;class#BasicMotion#0" expanded="false" />
-            <element signature="method#drawCrumbs#0;class#BasicMotion#0" expanded="false" />
+            <element signature="method#checkOrientationReached#0;class#Kinematic#0" expanded="false" />
+            <element signature="method#drawCrumbs#0;class#Kinematic#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Kinematic/BasicMotion.java">
+    <entry file="file://$PROJECT_DIR$/src/BasicMotion/Kinematic.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#0#3652#0" expanded="true" />
             <element signature="imports" expanded="true" />
-            <element signature="method#checkOrientationReached#0;class#BasicMotion#0" expanded="false" />
-            <element signature="method#drawCrumbs#0;class#BasicMotion#0" expanded="false" />
+            <element signature="method#checkOrientationReached#0;class#Kinematic#0" expanded="false" />
+            <element signature="method#drawCrumbs#0;class#Kinematic#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Kinematic/BasicMotion.java">
+    <entry file="file://$PROJECT_DIR$/src/BasicMotion/Kinematic.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#0#3652#0" expanded="true" />
             <element signature="imports" expanded="true" />
-            <element signature="method#checkOrientationReached#0;class#BasicMotion#0" expanded="false" />
-            <element signature="method#drawCrumbs#0;class#BasicMotion#0" expanded="false" />
+            <element signature="method#checkOrientationReached#0;class#Kinematic#0" expanded="false" />
+            <element signature="method#drawCrumbs#0;class#Kinematic#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Kinematic/BasicMotion.java">
+    <entry file="file://$PROJECT_DIR$/src/BasicMotion/Kinematic.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#0#3652#0" expanded="true" />
             <element signature="imports" expanded="true" />
-            <element signature="method#checkOrientationReached#0;class#BasicMotion#0" expanded="false" />
-            <element signature="method#drawCrumbs#0;class#BasicMotion#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main.java" />
-    <entry file="file://$PROJECT_DIR$/src/Kinematic/BasicMotion.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#3652#0" expanded="true" />
-            <element signature="imports" expanded="true" />
-            <element signature="method#checkOrientationReached#0;class#BasicMotion#0" expanded="false" />
-            <element signature="method#drawCrumbs#0;class#BasicMotion#0" expanded="false" />
+            <element signature="method#checkOrientationReached#0;class#Kinematic#0" expanded="false" />
+            <element signature="method#drawCrumbs#0;class#Kinematic#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.java" />
-    <entry file="file://$PROJECT_DIR$/src/Kinematic/BasicMotion.java">
+    <entry file="file://$PROJECT_DIR$/src/BasicMotion/Kinematic.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#3652#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="method#checkOrientationReached#0;class#Kinematic#0" expanded="false" />
+            <element signature="method#drawCrumbs#0;class#Kinematic#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java" />
+    <entry file="file://$PROJECT_DIR$/src/BasicMotion/Kinematic.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="10" column="26" lean-forward="false" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
           <folding>
             <element signature="e#0#3652#0" expanded="true" />
             <element signature="imports" expanded="true" />
-            <element signature="method#checkOrientationReached#0;class#BasicMotion#0" expanded="false" />
-            <element signature="method#drawCrumbs#0;class#BasicMotion#0" expanded="false" />
+            <element signature="method#checkOrientationReached#0;class#Kinematic#0" expanded="false" />
+            <element signature="method#drawCrumbs#0;class#Kinematic#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.java" />
-    <entry file="file://$PROJECT_DIR$/src/Kinematic/BasicMotion.java">
+    <entry file="file://$PROJECT_DIR$/src/BasicMotion/Kinematic.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#0#3652#0" expanded="true" />
             <element signature="imports" expanded="true" />
-            <element signature="method#checkOrientationReached#0;class#BasicMotion#0" expanded="false" />
-            <element signature="method#drawCrumbs#0;class#BasicMotion#0" expanded="false" />
+            <element signature="method#checkOrientationReached#0;class#Kinematic#0" expanded="false" />
+            <element signature="method#drawCrumbs#0;class#Kinematic#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.java" />
-    <entry file="file://$PROJECT_DIR$/src/Kinematic/BasicMotion.java">
+    <entry file="file://$PROJECT_DIR$/src/BasicMotion/Kinematic.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#0#3652#0" expanded="true" />
             <element signature="imports" expanded="true" />
-            <element signature="method#checkOrientationReached#0;class#BasicMotion#0" expanded="false" />
-            <element signature="method#drawCrumbs#0;class#BasicMotion#0" expanded="false" />
+            <element signature="method#checkOrientationReached#0;class#Kinematic#0" expanded="false" />
+            <element signature="method#drawCrumbs#0;class#Kinematic#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1286,18 +1297,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Kinematic/Kmotion.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1037">
-          <caret line="66" column="56" lean-forward="false" selection-start-line="66" selection-start-column="56" selection-end-line="66" selection-end-column="56" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="imports" expanded="true" />
-            <element signature="method#Kmotion#0;class#Kmotion#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/DataStructures/GameObject.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -1308,23 +1307,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Kinematic/BasicMotion.java">
+    <entry file="file://$PROJECT_DIR$/src/BasicMotion/Kinematic.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="645">
-          <caret line="45" column="35" lean-forward="false" selection-start-line="45" selection-start-column="35" selection-end-line="45" selection-end-column="35" />
+        <state relative-caret-position="407">
+          <caret line="104" column="39" lean-forward="false" selection-start-line="104" selection-start-column="39" selection-end-line="104" selection-end-column="39" />
           <folding>
             <element signature="e#0#3652#0" expanded="true" />
             <element signature="imports" expanded="true" />
-            <element signature="method#checkOrientationReached#0;class#BasicMotion#0" expanded="false" />
-            <element signature="method#drawCrumbs#0;class#BasicMotion#0" expanded="false" />
+            <element signature="method#checkOrientationReached#0;class#Kinematic#0" expanded="false" />
+            <element signature="method#drawCrumbs#0;class#Kinematic#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/SteeringArrive/Arrive.java">
+    <entry file="file://$PROJECT_DIR$/src/ArriveSteering/Arrive.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="770">
-          <caret line="87" column="9" lean-forward="true" selection-start-line="84" selection-start-column="8" selection-end-line="87" selection-end-column="9" />
+        <state relative-caret-position="935">
+          <caret line="70" column="96" lean-forward="false" selection-start-line="70" selection-start-column="96" selection-end-line="70" selection-end-column="96" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#updateCrumbs#0;class#Arrive#0" expanded="false" />
@@ -1333,7 +1332,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/SteeringWander/Wmotion.java">
+    <entry file="file://$PROJECT_DIR$/src/WanderSteering/Wmotion.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-256">
           <caret line="61" column="33" lean-forward="false" selection-start-line="61" selection-start-column="33" selection-end-line="61" selection-end-column="33" />
@@ -1375,40 +1374,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/SteeringArrive/Smotion.java">
+    <entry file="file://$PROJECT_DIR$/src/BasicMotion/Kmotion.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="213">
-          <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+        <state relative-caret-position="1037">
+          <caret line="66" column="56" lean-forward="false" selection-start-line="66" selection-start-column="56" selection-end-line="66" selection-end-column="56" />
           <folding>
+            <element signature="n#!!doc" expanded="true" />
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SteeringArrive/Align.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-170">
-          <caret line="10" column="19" lean-forward="false" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
-          <folding>
-            <element signature="e#1313#1314#0" expanded="true" />
-            <element signature="e#1391#1392#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Other/Helper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="26" column="106" lean-forward="false" selection-start-line="26" selection-start-column="106" selection-end-line="26" selection-end-column="106" />
-          <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="method#Kmotion#0;class#Kmotion#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/DataStructures/Agent.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="969">
+        <state relative-caret-position="1020">
           <caret line="76" column="38" lean-forward="false" selection-start-line="76" selection-start-column="23" selection-end-line="76" selection-end-column="38" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
@@ -1417,15 +1397,61 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/SteeringWander/Wander.java">
+    <entry file="file://$PROJECT_DIR$/src/FlockingBehavior/Flocking.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="58" column="14" lean-forward="false" selection-start-line="58" selection-start-column="14" selection-end-line="58" selection-end-column="14" />
+        <state relative-caret-position="306">
+          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1587#1588#0" expanded="true" />
-            <element signature="e#1616#1617#0" expanded="true" />
+            <element signature="e#232#233#0" expanded="true" />
+            <element signature="e#261#262#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ArriveSteering/Smotion.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="213">
+          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ArriveSteering/Align.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="94">
+          <caret line="10" column="19" lean-forward="false" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
+          <folding>
+            <element signature="e#1313#1314#0" expanded="true" />
+            <element signature="e#1391#1392#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/WanderSteering/Wander.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1563">
+          <caret line="98" column="43" lean-forward="true" selection-start-line="98" selection-start-column="43" selection-end-line="98" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1599#1600#0" expanded="true" />
+            <element signature="e#1628#1629#0" expanded="true" />
             <element signature="method#drawCrumbs#0;class#Wander#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Other/Helper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="45" column="0" lean-forward="true" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#checkTargetReached#0;class#Helper#0" expanded="false" />
+            <element signature="method#checkOrientationReached#0;class#Helper#0" expanded="false" />
+            <element signature="method#inFrame#0;class#Helper#0" expanded="false" />
           </folding>
         </state>
       </provider>

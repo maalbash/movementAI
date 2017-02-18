@@ -1,9 +1,10 @@
-package SteeringWander;
+package WanderSteering;
 
 
 import DataStructures.*;
-import SteeringArrive.Align;
-import SteeringArrive.Smotion;
+import ArriveSteering.Align;
+import ArriveSteering.Smotion;
+import Other.Helper;
 import processing.core.PApplet;
 import processing.core.PConstants;
 import processing.core.PShape;
@@ -24,7 +25,7 @@ public class Wander extends PApplet{
     Wmotion Swander;
     ArrayList<PVector> crumbs;
     long crumbTime, time;
-    float top,bot,right,left;
+    float bot,right;
 
     public void init(){
         initPos = new PVector(width/2, height/2);
@@ -47,7 +48,7 @@ public class Wander extends PApplet{
 
         crumbTime = 0;
 
-        Sarrive = new Smotion(3.f,2.f,5.f,20.f, 2.f);
+        Sarrive = new Smotion(5.f,2.f,5.f,20.f, 2.f);
         Salign = new Align( PConstants.PI/300, PConstants.PI/30,PConstants.PI/10, PConstants.PI/2, 30f );
         Sarrive.setPlayer(player);
         Sarrive.setTarget(initTarget);
@@ -60,10 +61,8 @@ public class Wander extends PApplet{
     }
 
     public void setup(){
-        top = 0;
-        bot = width;
-        right = 0;
-        left = height;
+        bot = height;
+        right = width;
         init();
         initTarget.setPosition(initPos);
         initTarget.setOrientation(0);
@@ -97,7 +96,7 @@ public class Wander extends PApplet{
         }
         player.update();
 
-        inFrame();
+        Helper.inFrame(player, bot, right);
 
         drawCrumbs();
 
@@ -108,22 +107,6 @@ public class Wander extends PApplet{
         popMatrix();
     }
 
-    public void inFrame() {
-        PVector newPosition = new PVector(player.getPosition().x, player.getPosition().y);
-        if (player.getPosition().x > right && player.getPosition().x < left) {//x is correct
-            if (player.getPosition().y > bot || player.getPosition().y < top) {// only y is not correct
-                newPosition.y = (player.getPosition().y > bot) ? (player.getPosition().y - bot) : (player.getPosition().y + bot);
-            }
-        } else {// x is not correct
-            if (player.getPosition().y > top && player.getPosition().y < bot) {//only x is not correct
-                newPosition.x = (player.getPosition().x > left) ? (player.getPosition().x - left) : (player.getPosition().x + left);
-            } else {// both x and y are messed up
-                newPosition.x = (player.getPosition().x > left) ? (player.getPosition().x - left) : (player.getPosition().x + left);
-                newPosition.y = (player.getPosition().y > bot) ? (player.getPosition().y - bot) : (player.getPosition().y + bot);
-            }
-        }
-        player.setPosition(newPosition);
-    }
 
     public void updateCrumbs(){
         if(crumbs.size() > 60)
@@ -142,5 +125,5 @@ public class Wander extends PApplet{
         }
     }
 
-    public static void main(String args[]){PApplet.main(new String("SteeringWander.Wander"));}
+    public static void main(String args[]){PApplet.main(new String("WanderSteering.Wander"));}
 }

@@ -2,7 +2,7 @@
  * Created by mohz2 on 12/18/2016.
  */
 
-package Kinematic;
+package BasicMotion;
 
 import DataStructures.*;
 import Other.Helper;
@@ -12,7 +12,7 @@ import processing.core.PShape;
 import processing.core.PVector;
 import java.util.ArrayList;
 
- public class BasicMotion extends PApplet{
+ public class Kinematic extends PApplet{
     PShape fullShape,body,head,breadCrumb;
     Agent player;
     GameObject t1,t2,t3,t4;
@@ -143,6 +143,6 @@ import java.util.ArrayList;
     }
 
      public static void main(String args[]) {
-         PApplet.main( new String[]{"Kinematic.BasicMotion"});
+         PApplet.main( new String[]{"BasicMotion.Kinematic"});
      }
 }
