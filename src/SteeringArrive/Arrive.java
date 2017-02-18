@@ -1,6 +1,7 @@
-package Steering;
+package SteeringArrive;
 
 import processing.core.PApplet;
+import processing.core.PConstants;
 import processing.core.PShape;
 import processing.core.PVector;
 import DataStructures.*;
@@ -12,11 +13,12 @@ import java.util.ArrayList;
 public class Arrive extends PApplet{
     PShape fullShape,body,head,breadCrumb;
     Agent player;
+    GameObject initTarget;
     PVector initPos;
     Smotion Sarrive;
     Align Salign;
     ArrayList<PVector> crumbs;
-    long crumbTime;
+    long crumbTime, time;
 
     public void updateCrumbs(){
         if(crumbs.size() > 8)
@@ -38,8 +40,11 @@ public class Arrive extends PApplet{
     public void init(){
         initPos = new PVector(50, 450);
         player = new Agent();
+        initTarget = new GameObject();
         player.setPosition(initPos);
         player.setOrientation(0);
+        initTarget.setPosition(initPos);
+        initTarget.setOrientation(0);
 
         breadCrumb = createShape(ELLIPSE,0, 0 , 4, 4);
         breadCrumb.setFill(155);
@@ -53,7 +58,7 @@ public class Arrive extends PApplet{
         body.setFill(0);
         head.setFill(0);
 
-        crumbTime = System.currentTimeMillis();
+        crumbTime = 0;
     }
 
     public void settings(){
@@ -62,18 +67,28 @@ public class Arrive extends PApplet{
 
     public void setup() {
         init();
-        Sarrive = new Smotion(.25f,.1f,1.f,2.f, 2.5f);
-        Salign = new Align(.25f,.1f,1.f, 2.f, 2.5f );
+        Sarrive = new Smotion(5.f,2.f,5.f,20.f, 2.f);
+        Salign = new Align( PConstants.PI/300, PConstants.PI/30,PConstants.PI/10, PConstants.PI/2, 30f );
+        Sarrive.setPlayer(player);
+        Sarrive.setTarget(initTarget);
+        Salign.setPlayer(player);
+        Salign.setTarget(initTarget);
     }
 
     public void draw(){
         background(255);
 
-        long time = System.currentTimeMillis();
+        time++;
 
-        player.update(time);
+        Sarrive.getSteering();
+        Salign.getSteering();
+        if (Salign.orientationReached()) {
+            player.setRotation(0);
+            player.setAngular(0);
+        }
+        player.update();
 
-        if(time-crumbTime > 100)
+        if(time-crumbTime > 3)
         {
             updateCrumbs();
             crumbTime = time;
@@ -98,5 +113,5 @@ public class Arrive extends PApplet{
         Salign.getTarget().setOrientation(dir.heading());
     }
 
-    public static void main(String args[]){ PApplet.main(new String[]{"Steering.Arrive"}); }
+    public static void main(String args[]){ PApplet.main(new String[]{"SteeringArrive.Arrive"}); }
 }

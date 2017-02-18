@@ -40,6 +40,8 @@ public class Agent extends GameObject {
         lastTime = System.currentTimeMillis();
         this.velocity = new PVector(0,0);
         this.rotation = 0;
+        this.linear = new PVector(0,0);
+        this.angular = 0;
     }
 
     public Agent(PVector position, float orientation, PVector velocity, float rotation) {
@@ -67,17 +69,18 @@ public class Agent extends GameObject {
 
 
 
-    public void update(long time)
+    public void update()
     {
-        long deltaTime = (time - lastTime);
-
         setPosition(position.add(velocity));
         float goalOrientation = orientation + rotation; //* deltaTime
         goalOrientation = Helper.mapToRange(goalOrientation);
-        //setOrientation(goalOrientation);
+        setOrientation(goalOrientation);
 
-        setOrientation(this.getNewOrientation());
-        lastTime = time;
+        //setOrientation(this.getNewOrientation());
+        setVelocity(PVector.add(velocity,linear));
+        setRotation(rotation + angular);
+
+
     }
 
     public float getNewOrientation()

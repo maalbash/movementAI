@@ -1,15 +1,15 @@
-package Steering;
+package SteeringArrive;
 
 /**
  * Created by mohz2 on 2/15/2017.
  */
 
-import DataStructures.Agent;
-import DataStructures.GameObject;
 import Other.*;
-import processing.core.PVector;
 
 public class Align extends Smotion{
+
+    public Align(){
+    }
 
     public Align(float maxAngular, float maxRot, float ROS, float ROD, float timeToTargetAccel) {
         this.maxAccel = maxAngular;
@@ -34,8 +34,15 @@ public class Align extends Smotion{
 
         goalRot *= rotation/Math.abs(rotation);
 
-        this.player.setAngular(goalRot - this.player.getRotation());
-        this.player.setAngular(this.player.getAngular()/this.timeToTargetVelocity);
+        float aaccel = goalRot - this.player.getRotation();
+        aaccel /= timeToTargetVelocity;
+
+        if(Math.abs(aaccel) > Math.abs(maxAccel)) {
+            aaccel /= Math.abs(aaccel);
+            aaccel *= maxAccel;
+        }
+
+        this.player.setAngular(aaccel);
     }
 
     public boolean orientationReached(){

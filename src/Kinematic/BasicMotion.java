@@ -37,13 +37,13 @@ import java.util.ArrayList;
 
     public void init() {
         t1pos = new PVector(50,450);
-        t1 = new GameObject(t1pos,-PI/2);
+        t1 = new GameObject(t1pos,PI/2);
 
         t2pos = new PVector(450,450);
         t2 = new GameObject(t2pos,0);
 
         t3pos = new PVector(450,50);
-        t3 = new GameObject(t3pos,PI/2);
+        t3 = new GameObject(t3pos,-PI/2);
 
         t4pos = new PVector(50,50);
         t4 = new GameObject(t4pos,PI);
@@ -102,7 +102,7 @@ import java.util.ArrayList;
 
     public void setup() {
         init();
-        kseek = new Kmotion(5.f,PI/450,player,t2);
+        kseek = new Kmotion(5.f,- PI/30,player,t2);
     }
 
     public void draw() {
@@ -111,7 +111,6 @@ import java.util.ArrayList;
         targetReached = Helper.checkTargetReached(player,targets.get(targetIndex));
         if(targetReached) {
             updateTarget();
-
         }
 
         kseek.setTarget(targets.get(targetIndex));
@@ -119,17 +118,16 @@ import java.util.ArrayList;
 
         //if(targetReached || (time - currTime > 1) )
         //{
-            player.update(time);
+            player.update();
             //player.setOrientation(player.getNewOrientation());
             //currTime = time;
         //}
-
-        //player.update(time);
 
         if(checkOrientationReached(player,targets.get(targetIndex)))
         {
             player.setRotation(0);
         }
+
         if(time - crumbTime > 3) {
             updateCrumbs();
             crumbTime = time;

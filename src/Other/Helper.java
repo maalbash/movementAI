@@ -9,7 +9,7 @@ import DataStructures.*;
 public class Helper {
     public static float mapToRange(float goalOrientation)
     {
-        float r = goalOrientation % PConstants.PI * 2;
+        float r = goalOrientation % (PConstants.PI * 2);
         if (Math.abs(r) <= PConstants.PI) {
             return r;
         }
@@ -24,6 +24,6 @@ public class Helper {
     }
 
     public static boolean checkOrientationReached(Agent O1, GameObject O2){
-        return Math.abs(O2.getOrientation()- O1.getOrientation()) % 2 * PConstants.PI < PConstants.PI/30;
+        return Math.abs(O2.getOrientation()- O1.getOrientation()) % 2 * PConstants.PI < PConstants.PI/1000;
     }
 }
