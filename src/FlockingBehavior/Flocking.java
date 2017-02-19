@@ -2,7 +2,7 @@ package FlockingBehavior;
 
 import ArriveSteering.Align;
 import ArriveSteering.Smotion;
-import BasicMotion.Kmotion;
+
 import DataStructures.Agent;
 import DataStructures.GameObject;
 import Other.Helper;
@@ -13,15 +13,17 @@ import processing.core.PShape;
 import processing.core.PVector;
 
 import java.util.ArrayList;
+import java.util.Random;
 
 /**
  * Created by mohz2 on 2/18/2017.
  */
 public class Flocking extends PApplet {
     PShape breadCrumb;
+    Random r = new Random();
     PVector initPos, boidInitPos;
-    float COHESION_WEIGHT = 0.01f;
-    float SEPARATION_WEIGHT = 100f;
+    float COHESION_WEIGHT = 0.1f;
+    float SEPERATION_DISTANCE = 100f;
     float VELOCITY_MATCHING_WEIGHT = 0.125f;
     Boid leaderBoid;
     ArrayList<Boid> Boids;
@@ -56,6 +58,7 @@ public class Flocking extends PApplet {
         leaderBoid.setBoidShape(leaderShape);
         initPos = new PVector(width/2,height/2);
         leader = new Agent();
+        leader.setPosition(initPos);
 
     }
     public void settings(){
@@ -90,7 +93,7 @@ public class Flocking extends PApplet {
         time++;
 
 
-        if(time - crumpTime > 3)
+        if(time - crumpTime > 20)
         {
             updateCrumps();
             crumpTime = time;
@@ -118,21 +121,19 @@ public class Flocking extends PApplet {
 
     public void AddPlayersToBoids() {
         for(int i = 0; i < Boids.size(); i++){
-            if(i % 2 == 0) {
-                boidInitPos = new PVector(i * 10.0f, i * 10.0f);
-            }else{
-                boidInitPos = new PVector(i * -10.0f, i * -10.0f);
-            }
+            boidInitPos = new PVector(width/2 - ((r.nextFloat() - r.nextFloat()) * 20.0f), height/2 - ((r.nextFloat() - r.nextFloat()) * 20.0f));
             Agent player = new Agent();
             player.setPosition(boidInitPos);
-            Kmotion kseek = new Kmotion(0.9f, PI/30,player,leaderBoid.getSwander().getPlayer());
-            Boids.get(i).setKseek(kseek);
+            Smotion FollowerArrive = new Smotion(1.f,2.f,5.f,20.f, 2.f);
+            FollowerArrive.setPlayer(player);
+            FollowerArrive.setTarget(leaderBoid.getSwander().getPlayer());
+            Boids.get(i).setSarrive(FollowerArrive);
         }
     }
 
     public void AllInFrame(){
         for(Boid boid : Boids){
-            Helper.inFrame(boid.getKseek().getPlayer(),0,0,height,width);
+            Helper.inFrame(boid.getSarrive().getPlayer(),0,0,height,width);
         }
         Helper.inFrame(leaderBoid.getSwander().getPlayer(),-25,-25,height + 25,width + 25);
     }
@@ -145,16 +146,16 @@ public class Flocking extends PApplet {
         popMatrix();
         for(Boid boid : Boids){
             pushMatrix();
-            translate(boid.getKseek().getPlayer().getPosition().x,boid.getKseek().getPlayer().getPosition().y);
-            rotate(boid.getKseek().getPlayer().getOrientation());
+            translate(boid.getSarrive().getPlayer().getPosition().x,boid.getSarrive().getPlayer().getPosition().y);
+            rotate(boid.getSarrive().getPlayer().getOrientation());
             shape(boid.getBoidShape());
             popMatrix();
         }
     }
 
     public PShape drawBoids(){
-        PShape body = createShape(ELLIPSE,0, 0, 20, 20);
-        PShape head = createShape(TRIANGLE,0 ,- 10, 0 , 10, 20, 0);
+        PShape body = createShape(ELLIPSE,0, 0, 10, 10);
+        PShape head = createShape(TRIANGLE,0 ,- 5, 0 , 5, 10, 0);
         PShape fullShape = createShape(GROUP);
         fullShape.addChild(body);
         fullShape.addChild(head);
@@ -166,13 +167,13 @@ public class Flocking extends PApplet {
     public void updateCrumps(){
         for(Boid boid : Boids)
         {
-            if(boid.crumps.size() > 10)
+            if(boid.crumps.size() > 20)
             {
                 boid.crumps.remove(0);
             }
-            boid.crumps.add(boid.getKseek().getPlayer().getPosition());
+            boid.crumps.add(boid.getSarrive().getPlayer().getPosition());
         }
-        if(leaderBoid.crumps.size() > 10)
+        if(leaderBoid.crumps.size() > 20)
             leaderBoid.crumps.remove(0);
         leaderBoid.crumps.add(leaderBoid.getSwander().getPlayer().getPosition());
     }
@@ -200,14 +201,10 @@ public class Flocking extends PApplet {
         for(Boid boid : Boids){
             PVector resultForce = PVector.add(cohesion(boid),seperation(boid));
             resultForce.add(match_velocity(boid));
-            boid.getKseek().getPlayer().setVelocity(PVector.add(boid.getKseek().getPlayer().getVelocity(),resultForce));
-            boid.getKseek().getKinematic();
-            boid.getKseek().getPlayer().setOrientation(boid.getKseek().getPlayer().getVelocity().heading());
-            if(Math.abs(boid.getKseek().getPlayer().getOrientation() - boid.getKseek().getTarget().getOrientation()) % 2 * PConstants.PI <= PConstants.PI/30)
-            {
-                boid.getKseek().getPlayer().setRotation(0);
-            }
-            boid.getKseek().getPlayer().update();
+            boid.getSarrive().getSteering();
+            boid.getSarrive().getPlayer().setVelocity(PVector.add(boid.getSarrive().getPlayer().getVelocity(),resultForce));
+            boid.getSarrive().getPlayer().setOrientation(boid.getSarrive().getPlayer().getVelocity().heading());
+            boid.getSarrive().getPlayer().update();
         }
     }
 
@@ -217,12 +214,12 @@ public class Flocking extends PApplet {
         {
             if(boid != b)
             {
-                PCj = PVector.add(PCj,boid.getKseek().getPlayer().getPosition());
+                PCj = PVector.add(PCj,boid.getSarrive().getPlayer().getPosition());
             }
         }
         PCj = PCj.div(Boids.size()-1);
 
-        PCj = PVector.sub(PCj,b.getKseek().getPlayer().getPosition());
+        PCj = PVector.sub(PCj,b.getSarrive().getPlayer().getPosition());
         return PVector.mult(PCj,COHESION_WEIGHT);
     }
 
@@ -232,13 +229,13 @@ public class Flocking extends PApplet {
         {
             if (boid != b)
             {
-                if(((PVector.sub(boid.getKseek().getPlayer().getPosition(),b.getKseek().getPlayer().getPosition())).mag()) < SEPARATION_WEIGHT)
+                if((PVector.dist(boid.getSarrive().getPlayer().getPosition(),b.getSarrive().getPlayer().getPosition())) < SEPERATION_DISTANCE)
                 {
-                    PCj = PVector.sub(PCj,PVector.sub(boid.getKseek().getPlayer().getPosition(),b.getKseek().getPlayer().getPosition()));
+                    PCj = PVector.sub(PCj,PVector.sub(boid.getSarrive().getPlayer().getPosition(),b.getSarrive().getPlayer().getPosition()));
                 }
             }
         }
-        return PVector.mult(PCj,5.0f);
+        return PCj;
     }
 
     public PVector match_velocity(Boid b){
@@ -247,7 +244,7 @@ public class Flocking extends PApplet {
         {
             if(boid != b)
             {
-                PCj = PVector.add(PCj,boid.getKseek().getPlayer().getVelocity());
+                PCj = PVector.add(PCj,boid.getSarrive().getPlayer().getVelocity());
             }
         }
         PCj = PVector.div(PCj,Boids.size()-1);

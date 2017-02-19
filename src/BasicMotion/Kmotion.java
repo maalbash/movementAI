@@ -73,4 +73,8 @@ public class Kmotion {
         //orientationReached();
         //this.player.setOrientation(this.player.getNewOrientation());
     }
+
+    public void getSteeringFlock(){
+
+    }
 }

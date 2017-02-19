@@ -1,5 +1,6 @@
 package FlockingBehavior;
 
+import ArriveSteering.Smotion;
 import BasicMotion.Kmotion;
 import DataStructures.Agent;
 import WanderSteering.Wmotion;
@@ -22,16 +23,27 @@ public class Boid {
     }
 
     Wmotion Swander;
-    Kmotion Kseek;
+
+    public Smotion getSarrive() {
+        return Sarrive;
+    }
+
+    public void setSarrive(Smotion sarrive) {
+        Sarrive = sarrive;
+    }
+
+    public ArrayList<PVector> getCrumps() {
+        return crumps;
+    }
+
+    public void setCrumps(ArrayList<PVector> crumps) {
+        this.crumps = crumps;
+    }
+
+    Smotion Sarrive;
     ArrayList<PVector> crumps;
 
-    public Kmotion getKseek() {
-        return Kseek;
-    }
 
-    public void setKseek(Kmotion kseek) {
-        Kseek = kseek;
-    }
 
     public PShape getBoidShape() {
         return BoidShape;
