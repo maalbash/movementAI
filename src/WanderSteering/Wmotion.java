@@ -89,6 +89,7 @@ public class Wmotion {
 
     public void getSteering(){
         wanderOrientation = randBinomial() + wanderRate;
+        //wanderOrientation = (float)(Math.random() - Math.random()) + wanderRate; // change wander rate to 2 PI and see what happens
         float targetOrientation = wanderOrientation + player.getOrientation();
         PVector targetPosition = PVector.add(player.getPosition(),PVector.mult(PVector.fromAngle(player.getOrientation()),wanderOffset));
         targetPosition = PVector.add(targetPosition,PVector.mult(PVector.fromAngle(targetOrientation),wanderRadius));

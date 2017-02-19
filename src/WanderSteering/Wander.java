@@ -45,7 +45,6 @@ public class Wander extends PApplet{
         fullShape.addChild(head);
         body.setFill(0);
         head.setFill(0);
-
         crumbTime = 0;
 
         Sarrive = new Smotion(5.f,2.f,5.f,20.f, 2.f);
@@ -96,7 +95,7 @@ public class Wander extends PApplet{
         }
         player.update();
 
-        Helper.inFrame(player, bot, right);
+        Helper.inFrame(player, 0,0,bot, right);
 
         drawCrumbs();
 

@@ -34,10 +34,8 @@ public class Agent extends GameObject {
     }
 
 
-    long lastTime;
-
     public Agent(){
-        lastTime = System.currentTimeMillis();
+        this.position = new PVector(0,0);
         this.velocity = new PVector(0,0);
         this.rotation = 0;
         this.linear = new PVector(0,0);

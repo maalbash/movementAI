@@ -26,18 +26,18 @@ public class Helper {
         return Math.abs(O2.getOrientation()- O1.getOrientation()) % 2 * PConstants.PI < PConstants.PI/1000;
     }
 
-    public static void inFrame(Agent player, float bot, float right) {
+    public static void inFrame(Agent player, float top, float left, float bot, float right) {
         PVector newPosition = new PVector(player.getPosition().x, player.getPosition().y);
-        if (player.getPosition().x > 0 && player.getPosition().x < right) {//x is correct
-            if (player.getPosition().y > bot || player.getPosition().y < 0) {// only y is not correct
-                newPosition.y = (player.getPosition().y > bot) ? (player.getPosition().y - bot) : (player.getPosition().y + bot);
+        if (player.getPosition().x > left && player.getPosition().x < right) {//x is correct
+            if (player.getPosition().y > bot || player.getPosition().y < top) {// only y is not correct
+                newPosition.y = (player.getPosition().y > bot) ? (player.getPosition().y - bot + top) : (player.getPosition().y + bot - top);
             }
         } else {// x is not correct
-            if (player.getPosition().y > 0 && player.getPosition().y < bot) {//only x is not correct
-                newPosition.x = (player.getPosition().x > right) ? (player.getPosition().x - right) : (player.getPosition().x + right);
+            if (player.getPosition().y > top && player.getPosition().y < bot) {//only x is not correct
+                newPosition.x = (player.getPosition().x > right) ? (player.getPosition().x - right + left) : (player.getPosition().x + right - left);
             } else {// both x and y are messed up
-                newPosition.x = (player.getPosition().x > right) ? (player.getPosition().x - right) : (player.getPosition().x + right);
-                newPosition.y = (player.getPosition().y > bot) ? (player.getPosition().y - bot) : (player.getPosition().y + bot);
+                newPosition.x = (player.getPosition().x > right) ? (player.getPosition().x - right + left) : (player.getPosition().x + right - left);
+                newPosition.y = (player.getPosition().y > bot) ? (player.getPosition().y - bot + top) : (player.getPosition().y + bot - top);
             }
         }
         player.setPosition(newPosition);
