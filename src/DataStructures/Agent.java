@@ -1,12 +1,12 @@
 /**
- * Created by mohz2 on 2/4/2017.
+ * Created by maalbash on 2/4/2017.
  */
 
 
 package DataStructures;
 
 import Other.Helper;
-import processing.core.PConstants;
+
 import processing.core.PVector;
 
 public class Agent extends GameObject {

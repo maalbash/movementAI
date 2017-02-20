@@ -1,3 +1,7 @@
+/**
+ * Created by maalbash on 2/15/2017.
+ */
+
 package ArriveSteering;
 
 import processing.core.PApplet;
@@ -7,9 +11,7 @@ import processing.core.PVector;
 import DataStructures.*;
 import java.util.ArrayList;
 
-/**
- * Created by mohz2 on 2/15/2017.
- */
+
 public class Arrive extends PApplet{
     PShape fullShape,body,head,breadCrumb;
     Agent player;

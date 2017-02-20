@@ -1,3 +1,7 @@
+/**
+ * Created by maalbash on 2/18/2017.
+ */
+
 package FlockingBehavior;
 
 import ArriveSteering.Align;
@@ -6,7 +10,6 @@ import ArriveSteering.Smotion;
 import DataStructures.Agent;
 import DataStructures.GameObject;
 import Other.Helper;
-import WanderSteering.Wander;
 import WanderSteering.Wmotion;
 import processing.core.PApplet;
 import processing.core.PConstants;
@@ -16,9 +19,7 @@ import processing.core.PVector;
 import java.util.ArrayList;
 import java.util.Random;
 
-/**
- * Created by mohz2 on 2/18/2017.
- */
+
 public class Flocking extends PApplet {
     PShape breadCrumb, leaderBreadCrumb;
     Random r = new Random();
@@ -27,15 +28,11 @@ public class Flocking extends PApplet {
     float SEPERATION_DISTANCE = 20f;
     float SEPERATION_FACTOR = 0.5f;
     float VELOCITY_MATCHING_WEIGHT = 0.1f;
-    Boid leaderBoid;
     ArrayList<Boid> Wanderers;
     ArrayList<Boid> Boids;
-    Agent leader;
-    GameObject initTarget;
     Smotion Sarrive;
     Align Salign;
     Wmotion Swander;
-    ArrayList<Agent> followers;
     long time, crumpTime;
 
     public void init(){
@@ -58,20 +55,6 @@ public class Flocking extends PApplet {
             boid.setBoidShape(drawBoids());
             Boids.add(boid);
         }
-//        leaderBoid = new Boid();
-//        PShape body = createShape(ELLIPSE,0, 0, 20, 20);
-//        PShape head = createShape(TRIANGLE,0 ,- 10, 0 , 10, 20, 0);
-//        PShape leaderShape = createShape(GROUP);
-//        leaderShape.addChild(body);
-//        leaderShape.addChild(head);
-//        body.setFill(color(255,0,0));
-//        head.setFill(color(255,0,0));
-//        body.setStroke(color(255,0,0));
-//        head.setStroke(color(255,0,0));
-//        leaderBoid.setBoidShape(leaderShape);
-//        initPos = new PVector(width/2,height/2);
-//        leader = new Agent();
-//        leader.setPosition(initPos);
 
     }
 
@@ -81,24 +64,6 @@ public class Flocking extends PApplet {
 
     public void setup(){
         init();
-//        initTarget = new GameObject(initPos,0);
-//        Sarrive = new Smotion(2.f,2.f,5.f,20.f, 2.f);
-//        Salign = new Align( PConstants.PI/300, PConstants.PI/30,PConstants.PI/10, PConstants.PI/2, 30f );
-//        Sarrive.setPlayer(leader);
-//        Sarrive.setTarget(initTarget);
-//        Salign.setPlayer(leader);
-//        Salign.setTarget(initTarget);
-//        Swander = new Wmotion();
-//        Swander.setPlayer(leader);
-//        Swander.setTarget(initTarget);
-//        Swander.setWanderRate(PConstants.PI);
-//        Swander.setWanderOffset(50);
-//        Swander.setWanderRadius(20);
-//        Swander.setSarrive(Sarrive);
-//        Swander.setSalign(Salign);
-//        leaderBoid.setSwander(Swander);
-//        leaderBoid.Swander.setPlayer(leader);
-//        leaderBoid.crumps = new ArrayList<PVector>();
         AddPlayersToLeaders();
         AddPlayersToFollowers();
     }
@@ -116,17 +81,6 @@ public class Flocking extends PApplet {
 
         drawCrumps();
 
-//        leaderBoid.Swander.getSteering();
-//        leaderBoid.Swander.getSarrive().getSteering();
-//        leaderBoid.Swander.getSalign().getSteering();
-//
-//        if(leaderBoid.Swander.getSalign().orientationReached()) {
-//            leaderBoid.Swander.getPlayer().setRotation(0);
-//            leaderBoid.Swander.getPlayer().setAngular(0);
-//        }
-//
-//        leaderBoid.getSwander().getPlayer().update();
-
         moveLeaders();
 
         FindLeader();
@@ -134,8 +88,6 @@ public class Flocking extends PApplet {
         AllInFrame();
 
         moveFlock();
-
-        //resetLinear();
 
         drawSingleFrame();
     }
@@ -227,11 +179,6 @@ public class Flocking extends PApplet {
             shape(leader.getBoidShape());
             popMatrix();
         }
-//        pushMatrix();
-//        translate(leaderBoid.getSwander().getPlayer().getPosition().x,leaderBoid.getSwander().getPlayer().getPosition().y);
-//        rotate(leaderBoid.getSwander().getPlayer().getOrientation());
-//        shape(leaderBoid.getBoidShape());
-//        popMatrix();
         for(Boid boid : Boids){
             pushMatrix();
             translate(boid.getSarrive().getPlayer().getPosition().x,boid.getSarrive().getPlayer().getPosition().y);
@@ -307,7 +254,6 @@ public class Flocking extends PApplet {
     public void moveFlock(){
         for(Boid boid : Boids){
             boid.getSarrive().getFlockingSteering(cohesion(boid),seperation(boid),match_velocity(boid));
-            //boid.getSarrive().getPlayer().setOrientation(boid.getSarrive().getPlayer().getVelocity().heading());
             boid.getSarrive().getPlayer().update();
             boid.getSalign().getSteering();
             if(boid.getSalign().orientationReached())

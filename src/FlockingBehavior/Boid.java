@@ -1,18 +1,19 @@
+/**
+ * Created by maalbash on 2/18/2017.
+ */
+
 package FlockingBehavior;
 
 import ArriveSteering.Align;
 import ArriveSteering.Smotion;
-import BasicMotion.Kmotion;
-import DataStructures.Agent;
+
 import WanderSteering.Wmotion;
 import processing.core.PShape;
 import processing.core.PVector;
 
 import java.util.ArrayList;
 
-/**
- * Created by mohz2 on 2/18/2017.
- */
+
 public class Boid {
 
     public Wmotion getSwander() {

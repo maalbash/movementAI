@@ -1,12 +1,14 @@
+/**
+ * Created by maalbash on 2/16/2017.
+ */
+
 package Other;
 
 import processing.core.PConstants;
 import DataStructures.*;
 import processing.core.PVector;
 
-/**
- * Created by mohz2 on 2/16/2017.
- */
+
 public class Helper {
     public static float mapToRange(float goalOrientation) {
         float r = goalOrientation % (PConstants.PI * 2);

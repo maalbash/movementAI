@@ -1,11 +1,13 @@
+/**
+ * Created by maalbash on 2/15/2017.
+ */
+
 package ArriveSteering;
 
 import DataStructures.*;
 import processing.core.PVector;
 
-/**
- * Created by mohz2 on 2/15/2017.
- */
+
 public class Smotion {
     Agent player;
     GameObject target;

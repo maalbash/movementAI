@@ -1,3 +1,6 @@
+/**
+ * Created by maalbash on 2/17/2017.
+ */
 package WanderSteering;
 
 import ArriveSteering.*;
@@ -6,9 +9,7 @@ import processing.core.PVector;
 
 import java.util.Random;
 
-/**
- * Created by mohz2 on 2/17/2017.
- */
+
 public class Wmotion {
     public Wmotion() {
 

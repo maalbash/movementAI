@@ -1,3 +1,7 @@
+/**
+ * Created by maalbash on 2/17/2017.
+ */
+
 package WanderSteering;
 
 
@@ -12,9 +16,7 @@ import processing.core.PVector;
 
 import java.util.ArrayList;
 
-/**
- * Created by mohz2 on 2/17/2017.
- */
+
 public class Wander extends PApplet{
     PShape fullShape,body,head,breadCrumb;
     Agent player;
