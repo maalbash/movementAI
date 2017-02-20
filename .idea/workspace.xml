@@ -3,14 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="69555fd6-b08e-4ead-9766-10e56c3ece64" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ArriveSteering/Arrive.java" afterPath="$PROJECT_DIR$/src/ArriveSteering/Arrive.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ArriveSteering/Smotion.java" afterPath="$PROJECT_DIR$/src/ArriveSteering/Smotion.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BasicMotion/Kinematic.java" afterPath="$PROJECT_DIR$/src/BasicMotion/Kinematic.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FlockingBehavior/Boid.java" afterPath="$PROJECT_DIR$/src/FlockingBehavior/Boid.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FlockingBehavior/Flocking.java" afterPath="$PROJECT_DIR$/src/FlockingBehavior/Flocking.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/WanderSteering/Wander.java" afterPath="$PROJECT_DIR$/src/WanderSteering/Wander.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/WanderSteering/Wmotion.java" afterPath="$PROJECT_DIR$/src/WanderSteering/Wmotion.java" />
     </list>
     <ignored path="First.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -51,7 +44,7 @@
       <file leaf-file-name="Arrive.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ArriveSteering/Arrive.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-63">
+            <state relative-caret-position="-318">
               <caret line="70" column="101" lean-forward="true" selection-start-line="70" selection-start-column="28" selection-end-line="70" selection-end-column="101" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -122,8 +115,8 @@
       <file leaf-file-name="Flocking.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/FlockingBehavior/Flocking.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="243">
-              <caret line="267" column="30" lean-forward="false" selection-start-line="267" selection-start-column="30" selection-end-line="267" selection-end-column="30" />
+            <state relative-caret-position="241">
+              <caret line="78" column="16" lean-forward="false" selection-start-line="78" selection-start-column="16" selection-end-line="78" selection-end-column="16" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#init#0;class#Flocking#0" expanded="false" />
@@ -143,6 +136,7 @@
                 <element signature="method#cohesion#0;class#Flocking#0" expanded="false" />
                 <element signature="method#seperation#0;class#Flocking#0" expanded="false" />
                 <element signature="method#match_velocity#0;class#Flocking#0" expanded="false" />
+                <element signature="method#mousePressed#0;class#Flocking#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -884,12 +878,12 @@
       <workItem from="1487091375641" duration="4152000" />
       <workItem from="1487130556720" duration="28862000" />
       <workItem from="1487300988740" duration="46218000" />
-      <workItem from="1487475021127" duration="38152000" />
+      <workItem from="1487475021127" duration="39566000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="197110000" />
+    <option name="totallyTimeSpent" value="198524000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
@@ -1421,18 +1415,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ArriveSteering/Arrive.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-63">
-          <caret line="70" column="101" lean-forward="true" selection-start-line="70" selection-start-column="28" selection-end-line="70" selection-end-column="101" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#updateCrumbs#0;class#Arrive#0" expanded="false" />
-            <element signature="method#drawCrumbs#0;class#Arrive#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ArriveSteering/Smotion.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="411">
@@ -1443,10 +1425,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/ArriveSteering/Arrive.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-318">
+          <caret line="70" column="101" lean-forward="true" selection-start-line="70" selection-start-column="28" selection-end-line="70" selection-end-column="101" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#updateCrumbs#0;class#Arrive#0" expanded="false" />
+            <element signature="method#drawCrumbs#0;class#Arrive#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/FlockingBehavior/Flocking.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="267" column="30" lean-forward="false" selection-start-line="267" selection-start-column="30" selection-end-line="267" selection-end-column="30" />
+        <state relative-caret-position="241">
+          <caret line="78" column="16" lean-forward="false" selection-start-line="78" selection-start-column="16" selection-end-line="78" selection-end-column="16" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#init#0;class#Flocking#0" expanded="false" />
@@ -1466,6 +1460,7 @@
             <element signature="method#cohesion#0;class#Flocking#0" expanded="false" />
             <element signature="method#seperation#0;class#Flocking#0" expanded="false" />
             <element signature="method#match_velocity#0;class#Flocking#0" expanded="false" />
+            <element signature="method#mousePressed#0;class#Flocking#0" expanded="false" />
           </folding>
         </state>
       </provider>

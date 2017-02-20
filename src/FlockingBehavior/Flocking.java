@@ -45,7 +45,7 @@ public class Flocking extends PApplet {
         leaderBreadCrumb.setFill(color(255,0,200));
         Boids = new ArrayList<Boid>();
         Wanderers = new ArrayList<Boid>();
-        for(int j= 0; j < 2; j++){
+        for(int j= 0; j < 4; j++){
             Boid boid = new Boid();
             boid.setBoidShape(drawLeader());
             Wanderers.add(boid);
@@ -76,7 +76,7 @@ public class Flocking extends PApplet {
     }
 
     public void settings(){
-        size(800,800);
+        size(1000,1000);
     }
 
     public void setup(){
@@ -360,6 +360,24 @@ public class Flocking extends PApplet {
         PCj = PVector.div(PCj,Boids.size()-1);
 
         return PVector.div(PCj,VELOCITY_MATCHING_WEIGHT);
+    }
+
+    public void mousePressed(){
+        PVector mouseLocation = new PVector(mouseX,mouseY);
+        Boid newFollower = new Boid();
+        newFollower.crumps = new ArrayList<PVector>();
+        newFollower.setBoidShape(drawBoids());
+        Agent player = new Agent();
+        player.setPosition(mouseLocation);
+        Smotion FollowerArrive = new Smotion(1.5f,2.f,5.f,20.f, 2.f);
+        Align FollowerAlign = new Align(PConstants.PI/50, PConstants.PI/30,PConstants.PI/15, PConstants.PI/2, 10f);
+        FollowerArrive.setPlayer(player);
+        FollowerArrive.setTarget(Wanderers.get(0).getSwander().getPlayer());
+        FollowerAlign.setPlayer(player);
+        FollowerAlign.setTarget(Wanderers.get(0).getSwander().getPlayer());
+        newFollower.setSarrive(FollowerArrive);
+        newFollower.setSalign(FollowerAlign);
+        Boids.add(newFollower);
     }
 
     public static void main(String args[]){ PApplet.main(new String ("FlockingBehavior.Flocking"));}
