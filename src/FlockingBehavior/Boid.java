@@ -1,5 +1,6 @@
 package FlockingBehavior;
 
+import ArriveSteering.Align;
 import ArriveSteering.Smotion;
 import BasicMotion.Kmotion;
 import DataStructures.Agent;
@@ -41,9 +42,17 @@ public class Boid {
     }
 
     Smotion Sarrive;
+
+    public Align getSalign() {
+        return Salign;
+    }
+
+    public void setSalign(Align salign) {
+        Salign = salign;
+    }
+
+    Align Salign;
     ArrayList<PVector> crumps;
-
-
 
     public PShape getBoidShape() {
         return BoidShape;
@@ -54,6 +63,7 @@ public class Boid {
     }
 
     PShape BoidShape;
+
 
     public Boid() {
     }

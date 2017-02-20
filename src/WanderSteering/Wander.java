@@ -47,7 +47,7 @@ public class Wander extends PApplet{
         head.setFill(0);
         crumbTime = 0;
 
-        Sarrive = new Smotion(5.f,2.f,5.f,20.f, 2.f);
+        Sarrive = new Smotion(3.f,2.f,5.f,20.f, 2.f);
         Salign = new Align( PConstants.PI/300, PConstants.PI/30,PConstants.PI/10, PConstants.PI/2, 30f );
         Sarrive.setPlayer(player);
         Sarrive.setTarget(initTarget);

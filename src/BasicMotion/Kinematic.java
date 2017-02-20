@@ -23,6 +23,7 @@ import java.util.ArrayList;
     boolean targetReached;
     int targetIndex;
     long crumbTime, currTime, time;
+    boolean instantRotate;
 
 
 
@@ -60,6 +61,7 @@ import java.util.ArrayList;
         targets.add(t4);
 
         targetIndex = 0;
+        instantRotate = false;
 
         breadCrumb = createShape(ELLIPSE,0, 0 , 4, 4);
         breadCrumb.setFill(155);
@@ -119,6 +121,10 @@ import java.util.ArrayList;
         //if(targetReached || (time - currTime > 1) )
         //{
             player.update();
+            if(instantRotate)
+            {
+                player.setOrientation(player.getVelocity().heading());
+            }
             //player.setOrientation(player.getNewOrientation());
             //currTime = time;
         //}
@@ -140,6 +146,10 @@ import java.util.ArrayList;
         rotate(player.getOrientation());
         shape(fullShape);
         popMatrix();
+    }
+
+    public void mousePressed(){
+        instantRotate = !instantRotate;
     }
 
      public static void main(String args[]) {

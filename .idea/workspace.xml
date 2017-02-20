@@ -2,10 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="69555fd6-b08e-4ead-9766-10e56c3ece64" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BasicMotion/Kmotion.java" afterPath="$PROJECT_DIR$/src/BasicMotion/Kmotion.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ArriveSteering/Arrive.java" afterPath="$PROJECT_DIR$/src/ArriveSteering/Arrive.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ArriveSteering/Smotion.java" afterPath="$PROJECT_DIR$/src/ArriveSteering/Smotion.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BasicMotion/Kinematic.java" afterPath="$PROJECT_DIR$/src/BasicMotion/Kinematic.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FlockingBehavior/Boid.java" afterPath="$PROJECT_DIR$/src/FlockingBehavior/Boid.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FlockingBehavior/Flocking.java" afterPath="$PROJECT_DIR$/src/FlockingBehavior/Flocking.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/WanderSteering/Wander.java" afterPath="$PROJECT_DIR$/src/WanderSteering/Wander.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/WanderSteering/Wmotion.java" afterPath="$PROJECT_DIR$/src/WanderSteering/Wmotion.java" />
     </list>
     <ignored path="First.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -30,12 +35,14 @@
       <file leaf-file-name="Kinematic.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/BasicMotion/Kinematic.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1219">
-              <caret line="36" column="0" lean-forward="true" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+            <state relative-caret-position="2334">
+              <caret line="151" column="39" lean-forward="false" selection-start-line="151" selection-start-column="39" selection-end-line="151" selection-end-column="39" />
               <folding>
-                <element signature="e#0#3652#0" expanded="true" />
+                <element signature="e#0#3918#0" expanded="true" />
                 <element signature="imports" expanded="true" />
                 <element signature="method#drawCrumbs#0;class#Kinematic#0" expanded="false" />
+                <element signature="e#3751#3752#0" expanded="true" />
+                <element signature="e#3797#3798#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -44,8 +51,8 @@
       <file leaf-file-name="Arrive.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ArriveSteering/Arrive.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="303">
-              <caret line="69" column="52" lean-forward="false" selection-start-line="69" selection-start-column="30" selection-end-line="69" selection-end-column="52" />
+            <state relative-caret-position="-63">
+              <caret line="70" column="101" lean-forward="true" selection-start-line="70" selection-start-column="28" selection-end-line="70" selection-end-column="101" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#updateCrumbs#0;class#Arrive#0" expanded="false" />
@@ -58,8 +65,8 @@
       <file leaf-file-name="Wander.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/WanderSteering/Wander.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="910">
-              <caret line="97" column="33" lean-forward="false" selection-start-line="97" selection-start-column="33" selection-end-line="97" selection-end-column="33" />
+            <state relative-caret-position="1054">
+              <caret line="70" column="30" lean-forward="false" selection-start-line="70" selection-start-column="30" selection-end-line="70" selection-end-column="30" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -67,14 +74,34 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="Align.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ArriveSteering/Align.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="21" column="16" lean-forward="false" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="16" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="Wmotion.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/WanderSteering/Wmotion.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="91" column="133" lean-forward="false" selection-start-line="91" selection-start-column="133" selection-end-line="91" selection-end-column="133" />
+            <state relative-caret-position="294">
+              <caret line="91" column="8" lean-forward="false" selection-start-line="91" selection-start-column="8" selection-end-line="91" selection-end-column="8" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GameObject.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/DataStructures/GameObject.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -92,55 +119,30 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Flocking.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Flocking.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/FlockingBehavior/Flocking.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-811">
-              <caret line="129" column="52" lean-forward="true" selection-start-line="129" selection-start-column="52" selection-end-line="129" selection-end-column="52" />
+            <state relative-caret-position="243">
+              <caret line="267" column="30" lean-forward="false" selection-start-line="267" selection-start-column="30" selection-end-line="267" selection-end-column="30" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="method#init#0;class#Flocking#0" expanded="false" />
                 <element signature="method#setup#0;class#Flocking#0" expanded="false" />
                 <element signature="method#draw#0;class#Flocking#0" expanded="false" />
+                <element signature="method#moveLeaders#0;class#Flocking#0" expanded="false" />
+                <element signature="method#FindLeader#0;class#Flocking#0" expanded="false" />
+                <element signature="method#AddPlayersToLeaders#0;class#Flocking#0" expanded="false" />
+                <element signature="method#AddPlayersToFollowers#0;class#Flocking#0" expanded="false" />
+                <element signature="method#AllInFrame#0;class#Flocking#0" expanded="false" />
+                <element signature="method#drawSingleFrame#0;class#Flocking#0" expanded="false" />
+                <element signature="method#drawLeader#0;class#Flocking#0" expanded="false" />
                 <element signature="method#drawBoids#0;class#Flocking#0" expanded="false" />
+                <element signature="method#updateCrumps#0;class#Flocking#0" expanded="false" />
                 <element signature="method#drawCrumps#0;class#Flocking#0" expanded="false" />
+                <element signature="method#moveFlock#0;class#Flocking#0" expanded="false" />
+                <element signature="method#cohesion#0;class#Flocking#0" expanded="false" />
                 <element signature="method#seperation#0;class#Flocking#0" expanded="false" />
                 <element signature="method#match_velocity#0;class#Flocking#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="340">
-                <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-                <folding />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Smotion.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ArriveSteering/Smotion.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="42" column="0" lean-forward="false" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Kmotion.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/BasicMotion/Kmotion.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="464">
-              <caret line="77" column="0" lean-forward="false" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#Kmotion#0;class#Kmotion#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -149,17 +151,34 @@
       <file leaf-file-name="Boid.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/FlockingBehavior/Boid.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="226">
-              <caret line="26" column="33" lean-forward="false" selection-start-line="26" selection-start-column="33" selection-end-line="26" selection-end-column="33" />
+            <state relative-caret-position="379">
+              <caret line="54" column="30" lean-forward="false" selection-start-line="54" selection-start-column="30" selection-end-line="54" selection-end-column="30" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#531#532#0" expanded="true" />
-                <element signature="e#578#579#0" expanded="true" />
-                <element signature="e#611#612#0" expanded="true" />
-                <element signature="e#656#657#0" expanded="true" />
+                <element signature="e#530#531#0" expanded="true" />
+                <element signature="e#560#561#0" expanded="true" />
+                <element signature="e#607#608#0" expanded="true" />
+                <element signature="e#640#641#0" expanded="true" />
                 <element signature="e#685#686#0" expanded="true" />
-                <element signature="e#741#742#0" expanded="true" />
-                <element signature="e#777#778#0" expanded="true" />
+                <element signature="e#714#715#0" expanded="true" />
+                <element signature="e#770#771#0" expanded="true" />
+                <element signature="e#806#807#0" expanded="true" />
+                <element signature="e#860#861#0" expanded="true" />
+                <element signature="e#889#890#0" expanded="true" />
+                <element signature="e#932#933#0" expanded="true" />
+                <element signature="e#963#964#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Smotion.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ArriveSteering/Smotion.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="411">
+              <caret line="86" column="47" lean-forward="false" selection-start-line="86" selection-start-column="47" selection-end-line="86" selection-end-column="47" />
+              <folding>
+                <element signature="method#getSteering#0;class#Smotion#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -186,6 +205,8 @@
       <find>0</find>
       <find>checkOrientationReached</find>
       <find>getKseek</find>
+      <find>breadCrumb</find>
+      <find>boidInitPos</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -222,16 +243,17 @@
         <option value="$PROJECT_DIR$/src/SteeringWander/Wmotion.java" />
         <option value="$PROJECT_DIR$/src/SteeringWander/Wander.java" />
         <option value="$PROJECT_DIR$/src/SteeringArrive/Arrive.java" />
-        <option value="$PROJECT_DIR$/src/ArriveSteering/Arrive.java" />
-        <option value="$PROJECT_DIR$/src/BasicMotion/Kinematic.java" />
         <option value="$PROJECT_DIR$/src/DataStructures/Agent.java" />
         <option value="$PROJECT_DIR$/src/Other/Helper.java" />
+        <option value="$PROJECT_DIR$/src/BasicMotion/Kmotion.java" />
+        <option value="$PROJECT_DIR$/src/BasicMotion/Kinematic.java" />
+        <option value="$PROJECT_DIR$/src/ArriveSteering/Arrive.java" />
         <option value="$PROJECT_DIR$/src/WanderSteering/Wander.java" />
         <option value="$PROJECT_DIR$/src/WanderSteering/Wmotion.java" />
-        <option value="$PROJECT_DIR$/src/BasicMotion/Kmotion.java" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/src/ArriveSteering/Smotion.java" />
         <option value="$PROJECT_DIR$/src/FlockingBehavior/Boid.java" />
         <option value="$PROJECT_DIR$/src/FlockingBehavior/Flocking.java" />
-        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -305,7 +327,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="FlockingBehavior" />
+              <option name="myItemId" value="DataStructures" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -318,7 +340,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/Submission-1/Submission/src" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Submission" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -862,12 +884,12 @@
       <workItem from="1487091375641" duration="4152000" />
       <workItem from="1487130556720" duration="28862000" />
       <workItem from="1487300988740" duration="46218000" />
-      <workItem from="1487475021127" duration="15190000" />
+      <workItem from="1487475021127" duration="38152000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="174148000" />
+    <option name="totallyTimeSpent" value="197110000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
@@ -890,6 +912,7 @@
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14375" sideWeight="0.4186414" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32740587" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -901,7 +924,6 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3284055" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -920,7 +942,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="53" />
+      <option name="time" value="78" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -929,26 +951,16 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/BasicMotion/Kmotion.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="38" column="5" lean-forward="true" selection-start-line="38" selection-start-column="5" selection-end-line="38" selection-end-column="5" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-            <element signature="imports" expanded="true" />
-            <element signature="method#Kmotion#0;class#Kmotion#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/BasicMotion/Kinematic.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
           <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
           <folding>
-            <element signature="e#0#3652#0" expanded="true" />
+            <element signature="e#0#3918#0" expanded="true" />
             <element signature="imports" expanded="true" />
             <element signature="method#drawCrumbs#0;class#Kinematic#0" expanded="false" />
+            <element signature="e#3751#3752#0" expanded="true" />
+            <element signature="e#3797#3798#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -968,6 +980,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="13" column="60" lean-forward="false" selection-start-line="13" selection-start-column="60" selection-end-line="13" selection-end-column="60" />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -988,9 +1003,11 @@
         <state relative-caret-position="289">
           <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
           <folding>
-            <element signature="e#0#3652#0" expanded="true" />
+            <element signature="e#0#3918#0" expanded="true" />
             <element signature="imports" expanded="true" />
             <element signature="method#drawCrumbs#0;class#Kinematic#0" expanded="false" />
+            <element signature="e#3751#3752#0" expanded="true" />
+            <element signature="e#3797#3798#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1010,6 +1027,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="13" column="60" lean-forward="false" selection-start-line="13" selection-start-column="60" selection-end-line="13" selection-end-column="60" />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1030,9 +1050,11 @@
         <state relative-caret-position="561">
           <caret line="33" column="0" lean-forward="true" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
           <folding>
-            <element signature="e#0#3652#0" expanded="true" />
+            <element signature="e#0#3918#0" expanded="true" />
             <element signature="imports" expanded="true" />
             <element signature="method#drawCrumbs#0;class#Kinematic#0" expanded="false" />
+            <element signature="e#3751#3752#0" expanded="true" />
+            <element signature="e#3797#3798#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1053,9 +1075,11 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#3652#0" expanded="true" />
+            <element signature="e#0#3918#0" expanded="true" />
             <element signature="imports" expanded="true" />
             <element signature="method#drawCrumbs#0;class#Kinematic#0" expanded="false" />
+            <element signature="e#3751#3752#0" expanded="true" />
+            <element signature="e#3797#3798#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1065,9 +1089,11 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#3652#0" expanded="true" />
+            <element signature="e#0#3918#0" expanded="true" />
             <element signature="imports" expanded="true" />
             <element signature="method#drawCrumbs#0;class#Kinematic#0" expanded="false" />
+            <element signature="e#3751#3752#0" expanded="true" />
+            <element signature="e#3797#3798#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1077,9 +1103,11 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#3652#0" expanded="true" />
+            <element signature="e#0#3918#0" expanded="true" />
             <element signature="imports" expanded="true" />
             <element signature="method#drawCrumbs#0;class#Kinematic#0" expanded="false" />
+            <element signature="e#3751#3752#0" expanded="true" />
+            <element signature="e#3797#3798#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1089,9 +1117,11 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#3652#0" expanded="true" />
+            <element signature="e#0#3918#0" expanded="true" />
             <element signature="imports" expanded="true" />
             <element signature="method#drawCrumbs#0;class#Kinematic#0" expanded="false" />
+            <element signature="e#3751#3752#0" expanded="true" />
+            <element signature="e#3797#3798#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1101,9 +1131,11 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#3652#0" expanded="true" />
+            <element signature="e#0#3918#0" expanded="true" />
             <element signature="imports" expanded="true" />
             <element signature="method#drawCrumbs#0;class#Kinematic#0" expanded="false" />
+            <element signature="e#3751#3752#0" expanded="true" />
+            <element signature="e#3797#3798#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1113,9 +1145,11 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#3652#0" expanded="true" />
+            <element signature="e#0#3918#0" expanded="true" />
             <element signature="imports" expanded="true" />
             <element signature="method#drawCrumbs#0;class#Kinematic#0" expanded="false" />
+            <element signature="e#3751#3752#0" expanded="true" />
+            <element signature="e#3797#3798#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1125,9 +1159,11 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#3652#0" expanded="true" />
+            <element signature="e#0#3918#0" expanded="true" />
             <element signature="imports" expanded="true" />
             <element signature="method#drawCrumbs#0;class#Kinematic#0" expanded="false" />
+            <element signature="e#3751#3752#0" expanded="true" />
+            <element signature="e#3797#3798#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1137,9 +1173,11 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#3652#0" expanded="true" />
+            <element signature="e#0#3918#0" expanded="true" />
             <element signature="imports" expanded="true" />
             <element signature="method#drawCrumbs#0;class#Kinematic#0" expanded="false" />
+            <element signature="e#3751#3752#0" expanded="true" />
+            <element signature="e#3797#3798#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1149,9 +1187,11 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#3652#0" expanded="true" />
+            <element signature="e#0#3918#0" expanded="true" />
             <element signature="imports" expanded="true" />
             <element signature="method#drawCrumbs#0;class#Kinematic#0" expanded="false" />
+            <element signature="e#3751#3752#0" expanded="true" />
+            <element signature="e#3797#3798#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1161,9 +1201,11 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#3652#0" expanded="true" />
+            <element signature="e#0#3918#0" expanded="true" />
             <element signature="imports" expanded="true" />
             <element signature="method#drawCrumbs#0;class#Kinematic#0" expanded="false" />
+            <element signature="e#3751#3752#0" expanded="true" />
+            <element signature="e#3797#3798#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1174,9 +1216,11 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#3652#0" expanded="true" />
+            <element signature="e#0#3918#0" expanded="true" />
             <element signature="imports" expanded="true" />
             <element signature="method#drawCrumbs#0;class#Kinematic#0" expanded="false" />
+            <element signature="e#3751#3752#0" expanded="true" />
+            <element signature="e#3797#3798#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1187,9 +1231,11 @@
         <state relative-caret-position="136">
           <caret line="10" column="26" lean-forward="false" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
           <folding>
-            <element signature="e#0#3652#0" expanded="true" />
+            <element signature="e#0#3918#0" expanded="true" />
             <element signature="imports" expanded="true" />
             <element signature="method#drawCrumbs#0;class#Kinematic#0" expanded="false" />
+            <element signature="e#3751#3752#0" expanded="true" />
+            <element signature="e#3797#3798#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1200,9 +1246,11 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#3652#0" expanded="true" />
+            <element signature="e#0#3918#0" expanded="true" />
             <element signature="imports" expanded="true" />
             <element signature="method#drawCrumbs#0;class#Kinematic#0" expanded="false" />
+            <element signature="e#3751#3752#0" expanded="true" />
+            <element signature="e#3797#3798#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1213,9 +1261,11 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#3652#0" expanded="true" />
+            <element signature="e#0#3918#0" expanded="true" />
             <element signature="imports" expanded="true" />
             <element signature="method#drawCrumbs#0;class#Kinematic#0" expanded="false" />
+            <element signature="e#3751#3752#0" expanded="true" />
+            <element signature="e#3797#3798#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1247,27 +1297,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/DataStructures/GameObject.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ArriveSteering/Align.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="10" column="19" lean-forward="false" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Other/Helper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="361">
           <caret line="32" column="100" lean-forward="false" selection-start-line="32" selection-start-column="100" selection-end-line="32" selection-end-column="100" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
             <element signature="method#checkTargetReached#0;class#Helper#0" expanded="false" />
           </folding>
         </state>
@@ -1275,49 +1310,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/BasicMotion/Kinematic.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1219">
-          <caret line="36" column="0" lean-forward="true" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+        <state relative-caret-position="2334">
+          <caret line="151" column="39" lean-forward="false" selection-start-line="151" selection-start-column="39" selection-end-line="151" selection-end-column="39" />
           <folding>
-            <element signature="e#0#3652#0" expanded="true" />
+            <element signature="e#0#3918#0" expanded="true" />
             <element signature="imports" expanded="true" />
             <element signature="method#drawCrumbs#0;class#Kinematic#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/WanderSteering/Wander.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="910">
-          <caret line="97" column="33" lean-forward="false" selection-start-line="97" selection-start-column="33" selection-end-line="97" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/WanderSteering/Wmotion.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="91" column="133" lean-forward="false" selection-start-line="91" selection-start-column="133" selection-end-line="91" selection-end-column="133" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/FlockingBehavior/Boid.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="226">
-          <caret line="26" column="33" lean-forward="false" selection-start-line="26" selection-start-column="33" selection-end-line="26" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#531#532#0" expanded="true" />
-            <element signature="e#578#579#0" expanded="true" />
-            <element signature="e#611#612#0" expanded="true" />
-            <element signature="e#656#657#0" expanded="true" />
-            <element signature="e#685#686#0" expanded="true" />
-            <element signature="e#741#742#0" expanded="true" />
-            <element signature="e#777#778#0" expanded="true" />
+            <element signature="e#3751#3752#0" expanded="true" />
+            <element signature="e#3797#3798#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1333,31 +1333,40 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ArriveSteering/Arrive.java">
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="11" lean-forward="false" selection-start-line="0" selection-start-column="11" selection-end-line="0" selection-end-column="11" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/WanderSteering/Wmotion.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="303">
-          <caret line="69" column="52" lean-forward="false" selection-start-line="69" selection-start-column="30" selection-end-line="69" selection-end-column="52" />
+        <state relative-caret-position="294">
+          <caret line="91" column="8" lean-forward="false" selection-start-line="91" selection-start-column="8" selection-end-line="91" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#updateCrumbs#0;class#Arrive#0" expanded="false" />
-            <element signature="method#drawCrumbs#0;class#Arrive#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/FlockingBehavior/Flocking.java">
+    <entry file="jar://$USER_HOME$/Desktop/GradSchool/Semester4/Building Game AI/processing-3.2.3/core/library/core.jar!/processing/core/PSurfaceNone.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-811">
-          <caret line="129" column="52" lean-forward="true" selection-start-line="129" selection-start-column="52" selection-end-line="129" selection-end-column="52" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#setup#0;class#Flocking#0" expanded="false" />
-            <element signature="method#draw#0;class#Flocking#0" expanded="false" />
-            <element signature="method#drawBoids#0;class#Flocking#0" expanded="false" />
-            <element signature="method#drawCrumps#0;class#Flocking#0" expanded="false" />
-            <element signature="method#seperation#0;class#Flocking#0" expanded="false" />
-            <element signature="method#match_velocity#0;class#Flocking#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="182">
+          <caret line="160" column="0" lean-forward="false" selection-start-line="160" selection-start-column="0" selection-end-line="160" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DataStructures/GameObject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1372,22 +1381,92 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ArriveSteering/Smotion.java">
+    <entry file="file://$PROJECT_DIR$/src/ArriveSteering/Align.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="42" column="0" lean-forward="false" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+        <state relative-caret-position="153">
+          <caret line="21" column="16" lean-forward="false" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="16" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="340">
-            <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor />
+    <entry file="file://$PROJECT_DIR$/src/WanderSteering/Wander.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1054">
+          <caret line="70" column="30" lean-forward="false" selection-start-line="70" selection-start-column="30" selection-end-line="70" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FlockingBehavior/Boid.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="379">
+          <caret line="54" column="30" lean-forward="false" selection-start-line="54" selection-start-column="30" selection-end-line="54" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#530#531#0" expanded="true" />
+            <element signature="e#560#561#0" expanded="true" />
+            <element signature="e#607#608#0" expanded="true" />
+            <element signature="e#640#641#0" expanded="true" />
+            <element signature="e#685#686#0" expanded="true" />
+            <element signature="e#714#715#0" expanded="true" />
+            <element signature="e#770#771#0" expanded="true" />
+            <element signature="e#806#807#0" expanded="true" />
+            <element signature="e#860#861#0" expanded="true" />
+            <element signature="e#889#890#0" expanded="true" />
+            <element signature="e#932#933#0" expanded="true" />
+            <element signature="e#963#964#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ArriveSteering/Arrive.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-63">
+          <caret line="70" column="101" lean-forward="true" selection-start-line="70" selection-start-column="28" selection-end-line="70" selection-end-column="101" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#updateCrumbs#0;class#Arrive#0" expanded="false" />
+            <element signature="method#drawCrumbs#0;class#Arrive#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ArriveSteering/Smotion.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="411">
+          <caret line="86" column="47" lean-forward="false" selection-start-line="86" selection-start-column="47" selection-end-line="86" selection-end-column="47" />
+          <folding>
+            <element signature="method#getSteering#0;class#Smotion#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FlockingBehavior/Flocking.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="267" column="30" lean-forward="false" selection-start-line="267" selection-start-column="30" selection-end-line="267" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#init#0;class#Flocking#0" expanded="false" />
+            <element signature="method#setup#0;class#Flocking#0" expanded="false" />
+            <element signature="method#draw#0;class#Flocking#0" expanded="false" />
+            <element signature="method#moveLeaders#0;class#Flocking#0" expanded="false" />
+            <element signature="method#FindLeader#0;class#Flocking#0" expanded="false" />
+            <element signature="method#AddPlayersToLeaders#0;class#Flocking#0" expanded="false" />
+            <element signature="method#AddPlayersToFollowers#0;class#Flocking#0" expanded="false" />
+            <element signature="method#AllInFrame#0;class#Flocking#0" expanded="false" />
+            <element signature="method#drawSingleFrame#0;class#Flocking#0" expanded="false" />
+            <element signature="method#drawLeader#0;class#Flocking#0" expanded="false" />
+            <element signature="method#drawBoids#0;class#Flocking#0" expanded="false" />
+            <element signature="method#updateCrumps#0;class#Flocking#0" expanded="false" />
+            <element signature="method#drawCrumps#0;class#Flocking#0" expanded="false" />
+            <element signature="method#moveFlock#0;class#Flocking#0" expanded="false" />
+            <element signature="method#cohesion#0;class#Flocking#0" expanded="false" />
+            <element signature="method#seperation#0;class#Flocking#0" expanded="false" />
+            <element signature="method#match_velocity#0;class#Flocking#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

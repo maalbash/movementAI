@@ -68,7 +68,7 @@ public class Arrive extends PApplet{
     public void setup() {
         init();
         Sarrive = new Smotion(5.f,2.f,5.f,20.f, 2.f);
-        Salign = new Align( PConstants.PI/50, PConstants.PI/30,PConstants.PI/15, PConstants.PI/2, 30f );
+        Salign = new Align( PConstants.PI/50, PConstants.PI/30,PConstants.PI/15, PConstants.PI/2, 10f );
         Sarrive.setPlayer(player);
         Sarrive.setTarget(initTarget);
         Salign.setPlayer(player);
